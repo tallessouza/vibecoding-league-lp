@@ -1,4 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ArgumentCard } from "@/components/ui/ArgumentCard";
+import { staggerContainer, staggerItem } from "@/lib/motion";
 
 const brazilArguments = [
   {
@@ -42,16 +46,23 @@ export function WhyBrazilSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           {brazilArguments.map((arg) => (
-            <ArgumentCard
-              key={arg.title}
-              title={arg.title}
-              highlight={arg.highlight}
-              description={arg.description}
-            />
+            <motion.div key={arg.title} variants={staggerItem}>
+              <ArgumentCard
+                title={arg.title}
+                highlight={arg.highlight}
+                description={arg.description}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
