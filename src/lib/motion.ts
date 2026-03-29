@@ -44,11 +44,24 @@ export const staggerContainer: Variants = {
       staggerChildren: 0.1,
     },
   },
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 export const staggerItem: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: motionTokens.duration.normal,
+      ease: motionTokens.easing.enter,
+    },
+  },
+  show: {
     opacity: 1,
     y: 0,
     transition: {
