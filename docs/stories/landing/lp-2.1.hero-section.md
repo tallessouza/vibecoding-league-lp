@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Done
 
 ## Executor Assignment
 
@@ -37,22 +37,22 @@ quality_gate_tools: ["manual-review", "visual-testing", "lighthouse"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `HeroSection` em `components/sections/HeroSection.tsx` (AC: 1-5)
-  - [ ] Container full-height com `min-h-screen` e `flex items-center`
-  - [ ] Headline `h1` com classe `text-display` e gradiente de texto AIOX
-  - [ ] Subheadline `p` com `text-body` e cor `--aiox-muted`
-  - [ ] Botão CTA primário → scroll para `#waitlist`
-  - [ ] Link CTA secundário → scroll para `#formato`
-- [ ] Implementar background visual (AC: 6)
-  - [ ] Gradiente dark de fundo: `--aiox-background` para variante mais escura
-  - [ ] Grid animado sutilmente (CSS `@keyframes` ou pseudo-elemento)
+- [x] Criar componente `HeroSection` em `components/sections/HeroSection.tsx` (AC: 1-5)
+  - [x] Container full-height com `min-h-screen` e `flex items-center`
+  - [x] Headline `h1` com classe `text-display` e gradiente de texto AIOX
+  - [x] Subheadline `p` com `text-body` e cor `--aiox-muted`
+  - [x] Botão CTA primário → scroll para `#waitlist`
+  - [x] Link CTA secundário → scroll para `#formato`
+- [x] Implementar background visual (AC: 6)
+  - [x] Gradiente dark de fundo: `--aiox-background` para variante mais escura
+  - [x] Grid animado sutilmente (CSS `@keyframes` ou pseudo-elemento)
   - [ ] Opcional: efeito de partículas com canvas leve (< 5kb)
-- [ ] Aplicar responsividade (AC: 7)
-  - [ ] Mobile: `text-center`, CTA empilhados verticalmente
-  - [ ] Desktop (`lg:`): `text-left`, CTAs lado a lado
-- [ ] Integrar em `app/page.tsx`
-  - [ ] Importar e renderizar `<HeroSection />`
-  - [ ] Adicionar `id="hero"` na seção
+- [x] Aplicar responsividade (AC: 7)
+  - [x] Mobile: `text-center`, CTA empilhados verticalmente
+  - [x] Desktop (`lg:`): `text-left`, CTAs lado a lado
+- [x] Integrar em `app/page.tsx`
+  - [x] Importar e renderizar `<HeroSection />`
+  - [x] Adicionar `id="hero"` na seção
 
 ## Dev Notes
 
@@ -73,8 +73,15 @@ Consultar `/brandbook/effects` e `/brandbook/vfx` para efeitos visuais AIOX comp
 - Background animado deve ter `prefers-reduced-motion` respeitado
 - Canvas/animações não devem impactar LCP > 2.5s
 
+## File List
+
+- `src/components/sections/HeroSection.tsx` — novo componente Hero Section
+- `src/app/page.tsx` — integração do HeroSection (substituiu hero inline)
+- `src/app/globals.css` — CSS: `.hero-headline`, `.hero-grid-bg`, animação `hero-grid-pulse`, `.hero-secondary-cta`
+
 ## Change Log
 
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementação completa: HeroSection component, grid animado, responsividade | Dex (@dev) |
