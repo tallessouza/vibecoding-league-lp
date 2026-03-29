@@ -157,6 +157,50 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 ### Agent Model Used
 claude-sonnet-4-6
 
+## QA Results
+
+**Verdict: PASS with CONCERNS (low severity)**
+**Date:** 2026-03-29
+**Reviewer:** Quinn (@qa)
+
+### AC Verification
+
+| AC | Status | Observação |
+|----|--------|------------|
+| AC1 — Tokens neon/glow | ✅ PASS | `--neon`, `--neon-dim`, `--neon-glow`, `--lime-glow`, `--lime-glow-soft` definidos (globals.css:228-232) |
+| AC2 — Tokens focus | ✅ PASS | `--focus-brand`, `--focus-neutral` definidos (globals.css:235-236) |
+| AC3 — Tokens selection | ✅ PASS | `--selection-bg`, `--selection-fg` + `::selection` rule definidos (globals.css:239-240, 260-263) |
+| AC4 — Tokens warning | ✅ PASS | `--warning-bg`, `--warning-border` definidos (globals.css:243-244) |
+| AC5 — color-bg-* + bb-surface-overlay | ✅ PASS | `--color-bg-void: #000000`, série completa + `--bb-surface-overlay` definidos |
+| AC6 — color-text-* | ✅ PASS | Todos os 4 tokens de texto definidos (globals.css:253-256) |
+| AC7 — Header.tsx migrado | ✅ PASS | `var(--bb-surface-overlay)` aplicado, `focus-visible:[box-shadow:var(--focus-brand)]` em links/botões, zero referências `aiox-*` |
+| AC8 — Footer.tsx migrado | ✅ PASS | `bb-*` tokens em toda a extensão, `focus-brand` nos links sociais, zero referências `aiox-*` |
+| AC9 — Button.tsx migrado | ✅ PASS | `bg-bb-lime`, `text-bb-dark`, `bb-surface`/`bb-border` em todas as variantes; `focus-visible:[box-shadow:var(--focus-brand)]` na base |
+| AC10 — neon-glow nos CTAs | ✅ PASS | Primary variant: `shadow-[var(--neon-glow)] hover:shadow-[var(--lime-glow)]`; utility `.neon-glow` definida |
+| AC11 — Zero aiox-* em componentes | ⚠️ PARTIAL | H/F/B: zero ✅. Fora do escopo desta story: `ArgumentCard.tsx`, `MonetizationCard.tsx`, `RoundCard.tsx` ainda usam `aiox-*` (aliases funcionais → bb-*) |
+
+### Concerns
+
+**[LOW] AC11 scope vs. wording mismatch**
+- `ArgumentCard.tsx`, `MonetizationCard.tsx` e `RoundCard.tsx` ainda usam classes `aiox-*`
+- Não é regressão: os tokens `aiox-*` estão mapeados como aliases para `bb-*` em globals.css (linhas 104-176), então o visual está correto
+- O escopo desta story define explicitamente apenas H/F/B para migração — os demais componentes estão fora de escopo
+- **Ação:** Criar story de migração para esses componentes remanescentes em sprint futuro
+
+### Gate Decision
+
+```yaml
+storyId: DS-ADAPT-1.2
+verdict: PASS
+concerns:
+  - severity: low
+    category: requirements
+    description: "AC11 parcialmente atendido: ArgumentCard/MonetizationCard/RoundCard ainda usam aiox-* fora do escopo desta story"
+    recommendation: "Criar story de migração para componentes LP remanescentes"
+```
+
+**Status:** Aprovado para push. Concerns documentados, não bloqueantes.
+
 ## Change Log
 
 | Date | Version | Description | Author |
@@ -164,3 +208,4 @@ claude-sonnet-4-6
 | 2026-03-29 | 1.0 | Story criada a partir dos findings de Uma em JOU-38 | River (@sm) |
 | 2026-03-29 | 1.1 | GO — 7/10: 11 ACs detalhados, migração bb-* bem documentada. Ausentes: estimativa de complexidade, seção de riscos (regressão na migração aiox-*→bb-*), DoD explícito — não bloqueantes | Pax (@po) |
 | 2026-03-29 | 1.2 | Implementação completa: tokens DS-ADAPT-1.2 adicionados, Header/Footer/Button migrados de aiox-* → bb-* | Dex (@dev) |
+| 2026-03-29 | 1.3 | QA Gate: PASS — 10/11 ACs pass, 1 concern low (AC11 parcial fora de escopo) | Quinn (@qa) |
