@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="hero-section relative flex min-h-screen items-center overflow-hidden px-8"
+      className="hero-section relative flex min-h-screen items-center overflow-hidden px-4 sm:px-6 lg:px-8"
     >
       {/* Animated grid background */}
       <div className="hero-grid-bg" aria-hidden="true" />

@@ -118,7 +118,7 @@ body {
 @layer components {
   /* Display (h1) — headline principal do Hero */
   .text-display {
-    font-size: var(--aiox-text-5xl);
+    font-size: clamp(2rem, 5vw, var(--aiox-text-5xl));
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -126,7 +126,7 @@ body {
 
   /* Section title (h2) — subtítulo de seções */
   .text-section {
-    font-size: var(--aiox-text-3xl);
+    font-size: clamp(1.5rem, 3vw, var(--aiox-text-3xl));
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.01em;

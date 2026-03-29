@@ -10,7 +10,7 @@ export function ArgumentCard({ title, highlight, description }: ArgumentCardProp
       <p className="text-sm font-semibold uppercase tracking-widest text-aiox-muted">
         {title}
       </p>
-      <p className="text-3xl font-bold text-aiox-accent leading-tight">
+      <p className="text-2xl sm:text-3xl font-bold text-aiox-accent leading-tight">
         {highlight}
       </p>
       <p className="text-body text-aiox-muted leading-relaxed">{description}</p>

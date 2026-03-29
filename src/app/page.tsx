@@ -13,7 +13,7 @@ export default function Home() {
       <AnimatedSection>
         <section
           id="formato"
-          className="bg-aiox-surface px-8 py-20"
+          className="bg-aiox-surface px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
         >
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-section text-aiox-foreground">Formato</h2>

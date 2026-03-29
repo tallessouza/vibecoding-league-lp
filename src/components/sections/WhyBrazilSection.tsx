@@ -29,7 +29,7 @@ export function WhyBrazilSection() {
   return (
     <section
       id="por-que-brasil"
-      className="bg-aiox-background px-8 py-20"
+      className="bg-aiox-background px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
     >
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex flex-col items-center text-center">

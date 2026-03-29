@@ -41,7 +41,7 @@ export function WaitlistSection() {
   return (
     <section
       id="waitlist"
-      className="relative overflow-hidden px-8 py-24"
+      className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
       style={{
         background:
           "linear-gradient(180deg, var(--aiox-background) 0%, var(--aiox-surface) 40%, var(--aiox-background) 100%)",
@@ -80,7 +80,7 @@ export function WaitlistSection() {
           <form
             onSubmit={handleSubmit(onSubmit)}
             noValidate
-            className="mt-10 space-y-5 rounded-lg border border-aiox-border bg-aiox-surface-elevated p-8 text-left"
+            className="mt-10 space-y-5 rounded-lg border border-aiox-border bg-aiox-surface-elevated p-5 sm:p-8 text-left"
           >
             {/* Campo Nome */}
             <div>
