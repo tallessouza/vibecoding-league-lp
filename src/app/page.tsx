@@ -1,4 +1,7 @@
 import { HeroSection } from "@/components/sections/HeroSection";
+import { StatsSection } from "@/components/sections/StatsSection";
+import { FormatSection } from "@/components/sections/FormatSection";
+import { MonetizationSection } from "@/components/sections/MonetizationSection";
 import { WhyBrazilSection } from "@/components/sections/WhyBrazilSection";
 import { WaitlistSection } from "@/components/sections/WaitlistSection";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -11,17 +14,15 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <section
-          id="formato"
-          className="bg-aiox-surface px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
-        >
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-section text-aiox-foreground">Formato</h2>
-            <p className="text-body mt-4 text-aiox-muted">
-              Em breve — conteúdo desta seção será implementado na próxima story.
-            </p>
-          </div>
-        </section>
+        <StatsSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <FormatSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <MonetizationSection />
       </AnimatedSection>
 
       <AnimatedSection>
