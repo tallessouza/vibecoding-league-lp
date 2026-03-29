@@ -110,3 +110,116 @@ body {
     text-wrap: balance;
   }
 }
+
+/* =============================================
+   Escala Tipográfica AIOX — Classes Utilitárias
+   Mapeamento: h1=display, h2=section, h3=card, body, caption
+   ============================================= */
+@layer components {
+  /* Display (h1) — headline principal do Hero */
+  .text-display {
+    font-size: var(--aiox-text-5xl);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Section title (h2) — subtítulo de seções */
+  .text-section {
+    font-size: var(--aiox-text-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  /* Card title (h3) — títulos de cards */
+  .text-card {
+    font-size: var(--aiox-text-xl);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  /* Body — texto corrido */
+  .text-body {
+    font-size: var(--aiox-text-base);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* Caption — textos auxiliares, labels */
+  .text-caption {
+    font-size: var(--aiox-text-sm);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--aiox-muted);
+  }
+}
+
+/* scroll-margin-top para compensar header fixo (h-16 = 4rem) */
+#hero,
+#formato,
+#por-que-brasil,
+#waitlist {
+  scroll-margin-top: 4rem;
+}
+
+/* =============================================
+   Hero Section — Background Animado + Tipografia
+   ============================================= */
+
+/* Gradient text para o headline principal */
+.hero-headline {
+  background: linear-gradient(135deg, #fffffe 0%, #c4b5fd 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid animado de fundo */
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: hero-grid-pulse 6s ease-in-out infinite;
+}
+
+@keyframes hero-grid-pulse {
+  0%, 100% {
+    opacity: 0.5;
+    background-size: 60px 60px;
+  }
+  50% {
+    opacity: 1;
+    background-size: 62px 62px;
+  }
+}
+
+/* Gradiente de fade nas bordas do grid */
+.hero-grid-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 50%,
+    transparent 30%,
+    var(--aiox-background) 100%
+  );
+}
+
+/* CTA secundário — alinhamento vertical */
+.hero-secondary-cta {
+  display: inline-flex;
+  align-items: center;
+  height: 3rem; /* igual ao Button size="lg" h-12 */
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-bg {
+    animation: none;
+    opacity: 0.5;
+  }
+}

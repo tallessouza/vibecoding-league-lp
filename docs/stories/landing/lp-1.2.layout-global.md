@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Ready for Review
 
 ## Executor Assignment
 
@@ -37,33 +37,33 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `Header` (AC: 2)
-  - [ ] Logo (SVG ou texto estilizado) posicionado à esquerda
-  - [ ] Links de navegação âncora com smooth scroll
-  - [ ] Botão CTA "Entrar na Lista" — variante `primary` do `Button` base
-  - [ ] `position: fixed`, `z-index` alto, backdrop blur
-- [ ] Criar componente `Footer` (AC: 3)
-  - [ ] Tagline: "O próximo esporte digital nascido do playbook da Kings League"
-  - [ ] Links sociais (Twitter/X, LinkedIn, GitHub) — placeholder `#`
-  - [ ] Copyright: "© 2026 Vibecoding Competitivo"
-- [ ] Atualizar `app/layout.tsx` (AC: 1)
-  - [ ] Importar `Header` e `Footer`
-  - [ ] Estrutura: `<html> > <body> > <Header /> <main>{children}</main> <Footer />`
-  - [ ] `padding-top` no `<main>` para compensar o header fixo
-- [ ] Aplicar escala tipográfica global (AC: 4)
-  - [ ] Definir classes utilitárias Tailwind baseadas nos tokens AIOX de tipografia
-  - [ ] `text-display`, `text-section`, `text-card`, `text-body`, `text-caption`
-  - [ ] Documentar em comentário no `globals.css`
-- [ ] Implementar menu mobile (AC: 5)
-  - [ ] Ícone hamburguer visível em `< 768px`
-  - [ ] Drawer/overlay com links de navegação
-  - [ ] Fechar ao clicar em link
-- [ ] Configurar smooth scroll (AC: 6)
-  - [ ] `html { scroll-behavior: smooth }` no `globals.css`
-  - [ ] `scroll-margin-top` nos elementos âncora para compensar header fixo
-- [ ] Validar página principal (AC: 7)
-  - [ ] `app/page.tsx` com `<section id="hero">`, `<section id="formato">`, etc. (placeholders)
-  - [ ] `next build` sem erros
+- [x] Criar componente `Header` (AC: 2)
+  - [x] Logo (SVG ou texto estilizado) posicionado à esquerda
+  - [x] Links de navegação âncora com smooth scroll
+  - [x] Botão CTA "Entrar na Lista" — variante `primary` do `Button` base
+  - [x] `position: fixed`, `z-index` alto, backdrop blur
+- [x] Criar componente `Footer` (AC: 3)
+  - [x] Tagline: "O próximo esporte digital nascido do playbook da Kings League"
+  - [x] Links sociais (Twitter/X, LinkedIn, GitHub) — placeholder `#`
+  - [x] Copyright: "© 2026 Vibecoding Competitivo"
+- [x] Atualizar `app/layout.tsx` (AC: 1)
+  - [x] Importar `Header` e `Footer`
+  - [x] Estrutura: `<html> > <body> > <Header /> <main>{children}</main> <Footer />`
+  - [x] `padding-top` no `<main>` para compensar o header fixo
+- [x] Aplicar escala tipográfica global (AC: 4)
+  - [x] Definir classes utilitárias Tailwind baseadas nos tokens AIOX de tipografia
+  - [x] `text-display`, `text-section`, `text-card`, `text-body`, `text-caption`
+  - [x] Documentar em comentário no `globals.css`
+- [x] Implementar menu mobile (AC: 5)
+  - [x] Ícone hamburguer visível em `< 768px`
+  - [x] Drawer/overlay com links de navegação
+  - [x] Fechar ao clicar em link
+- [x] Configurar smooth scroll (AC: 6)
+  - [x] `html { scroll-behavior: smooth }` no `globals.css`
+  - [x] `scroll-margin-top` nos elementos âncora para compensar header fixo
+- [x] Validar página principal (AC: 7)
+  - [x] `app/page.tsx` com `<section id="hero">`, `<section id="formato">`, etc. (placeholders)
+  - [x] `next build` sem erros
 
 ## Dev Notes
 
@@ -89,8 +89,29 @@ O header deve ter aparência dark/glassmorphism consistente com a estética AIOX
 - Botão hamburguer com `aria-expanded`, `aria-controls`
 - Links com foco visível
 
+## Dev Agent Record
+
+### Agent Model Used
+claude-sonnet-4-6
+
+### File List
+- `src/components/layout/Header.tsx` — novo
+- `src/components/layout/Footer.tsx` — novo
+- `src/app/layout.tsx` — modificado
+- `src/app/globals.css` — modificado (escala tipográfica + scroll-margin-top)
+- `src/app/page.tsx` — modificado (seções semânticas com IDs âncora)
+
+### Completion Notes
+- Header implementado com glassmorphism (`backdrop-filter: blur(12px)`), `position: fixed`, `z-index: 50`
+- Menu hamburger mobile com estado React, fecha ao clicar em link
+- Footer com tagline, ícones SVG inline para social links (placeholder `#`), copyright 2026
+- Escala tipográfica como `@layer components`: `text-display`, `text-section`, `text-card`, `text-body`, `text-caption`
+- `scroll-behavior: smooth` já estava no globals.css; adicionado `scroll-margin-top: 4rem` nas âncoras
+- `next build` passou sem erros ou warnings de tipos
+
 ## Change Log
 
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementação completa — Header, Footer, layout, tipografia, mobile menu | Dex (@dev) |
