@@ -2,22 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =============================================
+   AIOX Design Tokens — CSS Custom Properties
+   ============================================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* === Cores Primárias === */
+  --aiox-primary: #7c3aed;
+  --aiox-primary-hover: #6d28d9;
+  --aiox-primary-foreground: #ffffff;
+
+  /* === Cores de Acento === */
+  --aiox-accent: #f59e0b;
+  --aiox-accent-hover: #d97706;
+  --aiox-accent-foreground: #0f0e17;
+
+  /* === Superfícies === */
+  --aiox-background: #0f0e17;
+  --aiox-surface: #1a1830;
+  --aiox-surface-elevated: #24213d;
+
+  /* === Texto === */
+  --aiox-foreground: #fffffe;
+  --aiox-muted: #a0a0b2;
+  --aiox-muted-foreground: #6b7280;
+
+  /* === Bordas === */
+  --aiox-border: #2d2b4e;
+  --aiox-border-subtle: #1e1c35;
+
+  /* === Status === */
+  --aiox-success: #10b981;
+  --aiox-warning: #f59e0b;
+  --aiox-error: #ef4444;
+
+  /* === Gradientes === */
+  --aiox-gradient-primary: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  --aiox-gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --aiox-gradient-dark: linear-gradient(180deg, #1a1830 0%, #0f0e17 100%);
+
+  /* === Tipografia === */
+  --aiox-font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --aiox-font-mono: 'Fira Code', 'Cascadia Code', monospace;
+
+  --aiox-text-xs: 0.75rem;    /* 12px */
+  --aiox-text-sm: 0.875rem;   /* 14px */
+  --aiox-text-base: 1rem;     /* 16px */
+  --aiox-text-lg: 1.125rem;   /* 18px */
+  --aiox-text-xl: 1.25rem;    /* 20px */
+  --aiox-text-2xl: 1.5rem;    /* 24px */
+  --aiox-text-3xl: 1.875rem;  /* 30px */
+  --aiox-text-4xl: 2.25rem;   /* 36px */
+  --aiox-text-5xl: 3rem;      /* 48px */
+  --aiox-text-6xl: 3.75rem;   /* 60px */
+
+  /* === Espaçamento === */
+  --aiox-space-1: 0.25rem;
+  --aiox-space-2: 0.5rem;
+  --aiox-space-3: 0.75rem;
+  --aiox-space-4: 1rem;
+  --aiox-space-6: 1.5rem;
+  --aiox-space-8: 2rem;
+  --aiox-space-12: 3rem;
+  --aiox-space-16: 4rem;
+  --aiox-space-20: 5rem;
+  --aiox-space-24: 6rem;
+
+  /* === Raios de Borda === */
+  --aiox-radius-sm: 0.25rem;
+  --aiox-radius: 0.5rem;
+  --aiox-radius-md: 0.75rem;
+  --aiox-radius-lg: 1rem;
+  --aiox-radius-xl: 1.5rem;
+  --aiox-radius-full: 9999px;
+
+  /* === Sombras === */
+  --aiox-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --aiox-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --aiox-shadow-md: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --aiox-shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.5);
+  --aiox-shadow-glow: 0 0 20px rgba(124, 58, 237, 0.4);
+  --aiox-shadow-glow-accent: 0 0 20px rgba(245, 158, 11, 0.4);
+
+  /* === Motion === */
+  --aiox-duration-fast: 150ms;
+  --aiox-duration-normal: 250ms;
+  --aiox-duration-slow: 400ms;
+  --aiox-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --aiox-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --aiox-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* === Base Styles === */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--aiox-background);
+  color: var(--aiox-foreground);
+  font-family: var(--aiox-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {

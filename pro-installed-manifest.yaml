@@ -1,0 +1,1216 @@
+generatedAt: '2026-03-29T17:25:26.765Z'
+totalFiles: 592
+files:
+  - path: squads/README.md
+    timestamp: '2026-03-29T17:25:20.856Z'
+  - path: squads/design/HEADLINE.md
+    timestamp: '2026-03-29T17:25:20.864Z'
+  - path: squads/design/README.md
+    timestamp: '2026-03-29T17:25:20.868Z'
+  - path: squads/design/agents/brad-frost.md
+    timestamp: '2026-03-29T17:25:20.876Z'
+  - path: squads/design/agents/dan-mall.md
+    timestamp: '2026-03-29T17:25:20.880Z'
+  - path: squads/design/agents/dave-malouf.md
+    timestamp: '2026-03-29T17:25:20.892Z'
+  - path: squads/design/agents/design-chief.md
+    timestamp: '2026-03-29T17:25:20.896Z'
+  - path: squads/design/agents/ds-foundations-lead.md
+    timestamp: '2026-03-29T17:25:20.900Z'
+  - path: squads/design/agents/ds-token-architect.md
+    timestamp: '2026-03-29T17:25:20.904Z'
+  - path: squads/design/agents/nano-banana-generator.md
+    timestamp: '2026-03-29T17:25:20.912Z'
+  - path: squads/design/agents/storybook-expert.md
+    timestamp: '2026-03-29T17:25:20.924Z'
+  - path: squads/design/checklists/atomic-refactor-checklist.md
+    timestamp: '2026-03-29T17:25:20.932Z'
+  - path: squads/design/checklists/component-adaptation-checklist.md
+    timestamp: '2026-03-29T17:25:20.936Z'
+  - path: squads/design/checklists/design-fidelity-checklist.md
+    timestamp: '2026-03-29T17:25:20.940Z'
+  - path: squads/design/checklists/design-handoff-checklist.md
+    timestamp: '2026-03-29T17:25:20.944Z'
+  - path: squads/design/checklists/design-team-health-checklist.md
+    timestamp: '2026-03-29T17:25:20.948Z'
+  - path: squads/design/checklists/designops-maturity-checklist.md
+    timestamp: '2026-03-29T17:25:20.956Z'
+  - path: squads/design/checklists/ds-a11y-release-gate-checklist.md
+    timestamp: '2026-03-29T17:25:20.960Z'
+  - path: squads/design/checklists/ds-accessibility-wcag-checklist.md
+    timestamp: '2026-03-29T17:25:20.960Z'
+  - path: squads/design/checklists/ds-component-quality-checklist.md
+    timestamp: '2026-03-29T17:25:20.964Z'
+  - path: squads/design/checklists/ds-critical-eye-review-checklist.md
+    timestamp: '2026-03-29T17:25:20.972Z'
+  - path: squads/design/checklists/ds-migration-readiness-checklist.md
+    timestamp: '2026-03-29T17:25:20.980Z'
+  - path: squads/design/checklists/ds-pattern-audit-checklist.md
+    timestamp: '2026-03-29T17:25:20.984Z'
+  - path: squads/design/checklists/reading-accessibility-checklist.md
+    timestamp: '2026-03-29T17:25:20.988Z'
+  - path: squads/design/checklists/token-mapping-checklist.md
+    timestamp: '2026-03-29T17:25:20.992Z'
+  - path: squads/design/config/coding-standards.md
+    timestamp: '2026-03-29T17:25:20.996Z'
+  - path: squads/design/config/source-tree.md
+    timestamp: '2026-03-29T17:25:21.000Z'
+  - path: squads/design/config/tech-stack.md
+    timestamp: '2026-03-29T17:25:21.004Z'
+  - path: squads/design/config.yaml
+    timestamp: '2026-03-29T17:25:21.008Z'
+  - path: squads/design/data/agentic-design-systems-guide.md
+    timestamp: '2026-03-29T17:25:21.012Z'
+  - path: squads/design/data/agentic-ds-principles.md
+    timestamp: '2026-03-29T17:25:21.020Z'
+  - path: squads/design/data/atomic-design-principles.md
+    timestamp: '2026-03-29T17:25:21.024Z'
+  - path: squads/design/data/atomic-refactor-rules.md
+    timestamp: '2026-03-29T17:25:21.028Z'
+  - path: squads/design/data/base-component-specs.md
+    timestamp: '2026-03-29T17:25:21.040Z'
+  - path: squads/design/data/brad-frost-analysis-extract-implicit.yaml
+    timestamp: '2026-03-29T17:25:21.048Z'
+  - path: squads/design/data/brad-frost-analysis-find-0.8.yaml
+    timestamp: '2026-03-29T17:25:21.060Z'
+  - path: squads/design/data/brad-frost-analysis-qa-report.yaml
+    timestamp: '2026-03-29T17:25:21.064Z'
+  - path: squads/design/data/brad-frost-dna.yaml
+    timestamp: '2026-03-29T17:25:21.072Z'
+  - path: squads/design/data/capability-tools.yaml
+    timestamp: '2026-03-29T17:25:21.076Z'
+  - path: squads/design/data/component-adaptation-changelog.md
+    timestamp: '2026-03-29T17:25:21.080Z'
+  - path: squads/design/data/consolidation-algorithms.md
+    timestamp: '2026-03-29T17:25:21.084Z'
+  - path: squads/design/data/critical-eye-scoring-rules.yaml
+    timestamp: '2026-03-29T17:25:21.088Z'
+  - path: squads/design/data/design-token-best-practices.md
+    timestamp: '2026-03-29T17:25:21.092Z'
+  - path: squads/design/data/design-tokens-spec.yaml
+    timestamp: '2026-03-29T17:25:21.100Z'
+  - path: squads/design/data/ds-reference-architectures.md
+    timestamp: '2026-03-29T17:25:21.112Z'
+  - path: squads/design/data/f2-qa-report.md
+    timestamp: '2026-03-29T17:25:21.116Z'
+  - path: squads/design/data/f3-derived-components-changelog.md
+    timestamp: '2026-03-29T17:25:21.124Z'
+  - path: squads/design/data/f3-qa-report.md
+    timestamp: '2026-03-29T17:25:21.128Z'
+  - path: squads/design/data/figma-base-components-raw.md
+    timestamp: '2026-03-29T17:25:21.132Z'
+  - path: squads/design/data/figma-tokens-raw.md
+    timestamp: '2026-03-29T17:25:21.136Z'
+  - path: squads/design/data/fluent2-design-principles.md
+    timestamp: '2026-03-29T17:25:21.144Z'
+  - path: squads/design/data/high-retention-reading-guide.md
+    timestamp: '2026-03-29T17:25:21.148Z'
+  - path: squads/design/data/integration-patterns.md
+    timestamp: '2026-03-29T17:25:21.160Z'
+  - path: squads/design/data/internal-quality-chain.yaml
+    timestamp: '2026-03-29T17:25:21.164Z'
+  - path: squads/design/data/motion-tokens-guide.md
+    timestamp: '2026-03-29T17:25:21.168Z'
+  - path: squads/design/data/roi-calculation-guide.md
+    timestamp: '2026-03-29T17:25:21.172Z'
+  - path: squads/design/data/token-mapping-reference.md
+    timestamp: '2026-03-29T17:25:21.180Z'
+  - path: squads/design/data/w3c-dtcg-spec-reference.md
+    timestamp: '2026-03-29T17:25:21.184Z'
+  - path: squads/design/data/wcag-compliance-guide.md
+    timestamp: '2026-03-29T17:25:21.188Z'
+  - path: squads/design/docs/AUDIT_REPORT.md
+    timestamp: '2026-03-29T17:25:21.212Z'
+  - path: squads/design/docs/DS-CURATION-PIPELINE-PROPOSAL.md
+    timestamp: '2026-03-29T17:25:21.228Z'
+  - path: squads/design/docs/UPGRADE_PLAN.md
+    timestamp: '2026-03-29T17:25:21.236Z'
+  - path: squads/design/docs/brad-frost-research-validation.md
+    timestamp: '2026-03-29T17:25:21.260Z'
+  - path: squads/design/docs/dave-malouf-research-validation.md
+    timestamp: '2026-03-29T17:25:21.268Z'
+  - path: squads/design/docs/tool-discovery-report.md
+    timestamp: '2026-03-29T17:25:21.276Z'
+  - path: squads/design/docs/tool-integration-plan.md
+    timestamp: '2026-03-29T17:25:21.280Z'
+  - path: squads/design/protocols/ai-first-governance.md
+    timestamp: '2026-03-29T17:25:21.292Z'
+  - path: squads/design/protocols/governance-execution-boundary.md
+    timestamp: '2026-03-29T17:25:21.296Z'
+  - path: squads/design/protocols/handoff.md
+    timestamp: '2026-03-29T17:25:21.308Z'
+  - path: squads/design/rules/.claude-rules.md
+    timestamp: '2026-03-29T17:25:21.312Z'
+  - path: squads/design/scripts/design-system/curate_colors.cjs
+    timestamp: '2026-03-29T17:25:21.320Z'
+  - path: squads/design/scripts/design-system/curate_components.cjs
+    timestamp: '2026-03-29T17:25:21.332Z'
+  - path: squads/design/scripts/design-system/curate_radius.cjs
+    timestamp: '2026-03-29T17:25:21.344Z'
+  - path: squads/design/scripts/design-system/curate_shadows.cjs
+    timestamp: '2026-03-29T17:25:21.348Z'
+  - path: squads/design/scripts/design-system/curate_spacing.cjs
+    timestamp: '2026-03-29T17:25:21.360Z'
+  - path: squads/design/scripts/design-system/curate_typography.cjs
+    timestamp: '2026-03-29T17:25:21.364Z'
+  - path: squads/design/scripts/design-system/design-system-metadata.test.js
+    timestamp: '2026-03-29T17:25:21.372Z'
+  - path: squads/design/scripts/design-system/design_manifest_lib.cjs
+    timestamp: '2026-03-29T17:25:21.376Z'
+  - path: squads/design/scripts/design-system/fetch_page_images.cjs
+    timestamp: '2026-03-29T17:25:21.388Z'
+  - path: squads/design/scripts/design-system/generate_components_metadata.cjs
+    timestamp: '2026-03-29T17:25:21.388Z'
+  - path: squads/design/scripts/design-system/generate_curation_report.cjs
+    timestamp: '2026-03-29T17:25:21.396Z'
+  - path: squads/design/scripts/design-system/generate_tokens.cjs
+    timestamp: '2026-03-29T17:25:21.408Z'
+  - path: squads/design/scripts/design-system/sync_design_manifest.cjs
+    timestamp: '2026-03-29T17:25:21.420Z'
+  - path: squads/design/scripts/design-system/test_mcp_tools.cjs
+    timestamp: '2026-03-29T17:25:21.424Z'
+  - path: squads/design/scripts/design-system/validate_components_metadata.cjs
+    timestamp: '2026-03-29T17:25:21.436Z'
+  - path: squads/design/scripts/design-system/validate_curation.cjs
+    timestamp: '2026-03-29T17:25:21.452Z'
+  - path: squads/design/scripts/design-system/validate_design_manifest_drift.cjs
+    timestamp: '2026-03-29T17:25:21.468Z'
+  - path: squads/design/scripts/design-system/validate_mcp_skeleton.cjs
+    timestamp: '2026-03-29T17:25:21.476Z'
+  - path: squads/design/scripts/design-system/validate_registry.cjs
+    timestamp: '2026-03-29T17:25:21.484Z'
+  - path: squads/design/scripts/design-system/validate_task_checklist_bindings.cjs
+    timestamp: '2026-03-29T17:25:21.488Z'
+  - path: squads/design/scripts/dissect-artifact.cjs
+    timestamp: '2026-03-29T17:25:21.492Z'
+  - path: squads/design/scripts/validate-a11y-integration.cjs
+    timestamp: '2026-03-29T17:25:21.496Z'
+  - path: squads/design/scripts/validate-design-squad.py
+    timestamp: '2026-03-29T17:25:21.500Z'
+  - path: squads/design/squad.yaml
+    timestamp: '2026-03-29T17:25:21.504Z'
+  - path: squads/design/tasks/a11y-audit.md
+    timestamp: '2026-03-29T17:25:21.512Z'
+  - path: squads/design/tasks/aria-audit.md
+    timestamp: '2026-03-29T17:25:21.516Z'
+  - path: squads/design/tasks/atomic-refactor-execute.md
+    timestamp: '2026-03-29T17:25:21.520Z'
+  - path: squads/design/tasks/atomic-refactor-plan.md
+    timestamp: '2026-03-29T17:25:21.528Z'
+  - path: squads/design/tasks/audit-reading-experience.md
+    timestamp: '2026-03-29T17:25:21.540Z'
+  - path: squads/design/tasks/audit-tailwind-config.md
+    timestamp: '2026-03-29T17:25:21.564Z'
+  - path: squads/design/tasks/bootstrap-shadcn-library.md
+    timestamp: '2026-03-29T17:25:21.576Z'
+  - path: squads/design/tasks/bundle-audit.md
+    timestamp: '2026-03-29T17:25:21.600Z'
+  - path: squads/design/tasks/contrast-matrix.md
+    timestamp: '2026-03-29T17:25:21.608Z'
+  - path: squads/design/tasks/create-doc.md
+    timestamp: '2026-03-29T17:25:21.620Z'
+  - path: squads/design/tasks/dead-code-detection.md
+    timestamp: '2026-03-29T17:25:21.636Z'
+  - path: squads/design/tasks/design-compare.md
+    timestamp: '2026-03-29T17:25:21.644Z'
+  - path: squads/design/tasks/design-process-optimization.md
+    timestamp: '2026-03-29T17:25:21.656Z'
+  - path: squads/design/tasks/design-review-orchestration.md
+    timestamp: '2026-03-29T17:25:21.676Z'
+  - path: squads/design/tasks/design-team-scaling.md
+    timestamp: '2026-03-29T17:25:21.704Z'
+  - path: squads/design/tasks/design-tooling-audit.md
+    timestamp: '2026-03-29T17:25:21.712Z'
+  - path: squads/design/tasks/design-triage.md
+    timestamp: '2026-03-29T17:25:21.736Z'
+  - path: squads/design/tasks/designops-maturity-assessment.md
+    timestamp: '2026-03-29T17:25:21.740Z'
+  - path: squads/design/tasks/designops-metrics-setup.md
+    timestamp: '2026-03-29T17:25:21.764Z'
+  - path: squads/design/tasks/ds-agentic-audit.md
+    timestamp: '2026-03-29T17:25:21.796Z'
+  - path: squads/design/tasks/ds-agentic-setup.md
+    timestamp: '2026-03-29T17:25:21.800Z'
+  - path: squads/design/tasks/ds-audit-codebase.md
+    timestamp: '2026-03-29T17:25:21.804Z'
+  - path: squads/design/tasks/ds-build-component.md
+    timestamp: '2026-03-29T17:25:21.820Z'
+  - path: squads/design/tasks/ds-build-mcp-server.md
+    timestamp: '2026-03-29T17:25:21.832Z'
+  - path: squads/design/tasks/ds-calculate-roi.md
+    timestamp: '2026-03-29T17:25:21.836Z'
+  - path: squads/design/tasks/ds-compose-molecule.md
+    timestamp: '2026-03-29T17:25:21.848Z'
+  - path: squads/design/tasks/ds-consolidate-patterns.md
+    timestamp: '2026-03-29T17:25:21.852Z'
+  - path: squads/design/tasks/ds-context-contract.md
+    timestamp: '2026-03-29T17:25:21.852Z'
+  - path: squads/design/tasks/ds-critical-eye-compare.md
+    timestamp: '2026-03-29T17:25:21.864Z'
+  - path: squads/design/tasks/ds-critical-eye-decide.md
+    timestamp: '2026-03-29T17:25:21.876Z'
+  - path: squads/design/tasks/ds-critical-eye-inventory.md
+    timestamp: '2026-03-29T17:25:21.888Z'
+  - path: squads/design/tasks/ds-critical-eye-report.md
+    timestamp: '2026-03-29T17:25:21.896Z'
+  - path: squads/design/tasks/ds-critical-eye-score.md
+    timestamp: '2026-03-29T17:25:21.912Z'
+  - path: squads/design/tasks/ds-designops.md
+    timestamp: '2026-03-29T17:25:21.924Z'
+  - path: squads/design/tasks/ds-extend-pattern.md
+    timestamp: '2026-03-29T17:25:21.936Z'
+  - path: squads/design/tasks/ds-extract-tokens.md
+    timestamp: '2026-03-29T17:25:21.948Z'
+  - path: squads/design/tasks/ds-figma-pipeline.md
+    timestamp: '2026-03-29T17:25:21.952Z'
+  - path: squads/design/tasks/ds-fluent-audit.md
+    timestamp: '2026-03-29T17:25:21.968Z'
+  - path: squads/design/tasks/ds-fluent-build.md
+    timestamp: '2026-03-29T17:25:21.996Z'
+  - path: squads/design/tasks/ds-generate-ai-metadata.md
+    timestamp: '2026-03-29T17:25:22.012Z'
+  - path: squads/design/tasks/ds-generate-cursor-rules.md
+    timestamp: '2026-03-29T17:25:22.036Z'
+  - path: squads/design/tasks/ds-generate-documentation.md
+    timestamp: '2026-03-29T17:25:22.048Z'
+  - path: squads/design/tasks/ds-generate-migration-strategy.md
+    timestamp: '2026-03-29T17:25:22.064Z'
+  - path: squads/design/tasks/ds-generate-shock-report.md
+    timestamp: '2026-03-29T17:25:22.076Z'
+  - path: squads/design/tasks/ds-govern-a11y-compliance.md
+    timestamp: '2026-03-29T17:25:22.104Z'
+  - path: squads/design/tasks/ds-governance.md
+    timestamp: '2026-03-29T17:25:22.108Z'
+  - path: squads/design/tasks/ds-health-metrics.md
+    timestamp: '2026-03-29T17:25:22.120Z'
+  - path: squads/design/tasks/ds-integrate-squad.md
+    timestamp: '2026-03-29T17:25:22.152Z'
+  - path: squads/design/tasks/ds-integrate-workspace.md
+    timestamp: '2026-03-29T17:25:22.152Z'
+  - path: squads/design/tasks/ds-legacy-modernization.md
+    timestamp: '2026-03-29T17:25:22.172Z'
+  - path: squads/design/tasks/ds-mcp-status.md
+    timestamp: '2026-03-29T17:25:22.212Z'
+  - path: squads/design/tasks/ds-motion-audit.md
+    timestamp: '2026-03-29T17:25:22.220Z'
+  - path: squads/design/tasks/ds-multi-framework.md
+    timestamp: '2026-03-29T17:25:22.232Z'
+  - path: squads/design/tasks/ds-parallelization-gate.md
+    timestamp: '2026-03-29T17:25:22.240Z'
+  - path: squads/design/tasks/ds-query.md
+    timestamp: '2026-03-29T17:25:22.260Z'
+  - path: squads/design/tasks/ds-rebuild-artifact.md
+    timestamp: '2026-03-29T17:25:22.268Z'
+  - path: squads/design/tasks/ds-reverse-engineer.md
+    timestamp: '2026-03-29T17:25:22.288Z'
+  - path: squads/design/tasks/ds-scan-artifact.md
+    timestamp: '2026-03-29T17:25:22.308Z'
+  - path: squads/design/tasks/ds-setup-design-system.md
+    timestamp: '2026-03-29T17:25:22.316Z'
+  - path: squads/design/tasks/ds-sync-registry.md
+    timestamp: '2026-03-29T17:25:22.332Z'
+  - path: squads/design/tasks/ds-theme-multi-brand.md
+    timestamp: '2026-03-29T17:25:22.344Z'
+  - path: squads/design/tasks/ds-token-modes.md
+    timestamp: '2026-03-29T17:25:22.356Z'
+  - path: squads/design/tasks/ds-token-w3c-extract.md
+    timestamp: '2026-03-29T17:25:22.368Z'
+  - path: squads/design/tasks/ds-validate-ai-readiness.md
+    timestamp: '2026-03-29T17:25:22.380Z'
+  - path: squads/design/tasks/ds-visual-regression.md
+    timestamp: '2026-03-29T17:25:22.388Z'
+  - path: squads/design/tasks/execute-checklist.md
+    timestamp: '2026-03-29T17:25:22.392Z'
+  - path: squads/design/tasks/export-design-tokens-dtcg.md
+    timestamp: '2026-03-29T17:25:22.400Z'
+  - path: squads/design/tasks/f1-apply-foundations.md
+    timestamp: '2026-03-29T17:25:22.412Z'
+  - path: squads/design/tasks/f1-ingest-figma-tokens.md
+    timestamp: '2026-03-29T17:25:22.428Z'
+  - path: squads/design/tasks/f1-map-tokens-to-shadcn.md
+    timestamp: '2026-03-29T17:25:22.452Z'
+  - path: squads/design/tasks/f1-qa-foundations.md
+    timestamp: '2026-03-29T17:25:22.464Z'
+  - path: squads/design/tasks/f2-adapt-shadcn-components.md
+    timestamp: '2026-03-29T17:25:22.488Z'
+  - path: squads/design/tasks/f2-ingest-base-components.md
+    timestamp: '2026-03-29T17:25:22.504Z'
+  - path: squads/design/tasks/f2-qa-base-components.md
+    timestamp: '2026-03-29T17:25:22.524Z'
+  - path: squads/design/tasks/f3-derive-components.md
+    timestamp: '2026-03-29T17:25:22.544Z'
+  - path: squads/design/tasks/f3-qa-derived-components.md
+    timestamp: '2026-03-29T17:25:22.552Z'
+  - path: squads/design/tasks/focus-order-audit.md
+    timestamp: '2026-03-29T17:25:22.564Z'
+  - path: squads/design/tasks/sb-brownfield-migrate.md
+    timestamp: '2026-03-29T17:25:22.572Z'
+  - path: squads/design/tasks/sb-brownfield-scan.md
+    timestamp: '2026-03-29T17:25:22.580Z'
+  - path: squads/design/tasks/sb-configure.md
+    timestamp: '2026-03-29T17:25:22.584Z'
+  - path: squads/design/tasks/sb-expand-shadcn.md
+    timestamp: '2026-03-29T17:25:22.592Z'
+  - path: squads/design/tasks/sb-generate-all-stories.md
+    timestamp: '2026-03-29T17:25:22.600Z'
+  - path: squads/design/tasks/sb-install.md
+    timestamp: '2026-03-29T17:25:22.604Z'
+  - path: squads/design/tasks/sb-sync-workspace.md
+    timestamp: '2026-03-29T17:25:22.612Z'
+  - path: squads/design/tasks/sb-verify.md
+    timestamp: '2026-03-29T17:25:22.620Z'
+  - path: squads/design/tasks/tailwind-upgrade.md
+    timestamp: '2026-03-29T17:25:22.624Z'
+  - path: squads/design/tasks/token-usage-analytics.md
+    timestamp: '2026-03-29T17:25:22.628Z'
+  - path: squads/design/tasks/ux-rewrite-sixth-grade.md
+    timestamp: '2026-03-29T17:25:22.636Z'
+  - path: squads/design/tasks/validate-design-fidelity.md
+    timestamp: '2026-03-29T17:25:22.644Z'
+  - path: squads/design/templates/agent-template.yaml
+    timestamp: '2026-03-29T17:25:22.652Z'
+  - path: squads/design/templates/clone-mind-template.md
+    timestamp: '2026-03-29T17:25:22.660Z'
+  - path: squads/design/templates/component-prompt-injection-tmpl.md
+    timestamp: '2026-03-29T17:25:22.676Z'
+  - path: squads/design/templates/component-visual-spec-tmpl.md
+    timestamp: '2026-03-29T17:25:22.708Z'
+  - path: squads/design/templates/critical-eye-cycle-report-tmpl.md
+    timestamp: '2026-03-29T17:25:22.744Z'
+  - path: squads/design/templates/design-fidelity-report-tmpl.md
+    timestamp: '2026-03-29T17:25:22.764Z'
+  - path: squads/design/templates/ds-ai-component-metadata-schema-tmpl.json
+    timestamp: '2026-03-29T17:25:22.792Z'
+  - path: squads/design/templates/ds-artifact-analysis.md
+    timestamp: '2026-03-29T17:25:22.808Z'
+  - path: squads/design/templates/ds-health-report-tmpl.md
+    timestamp: '2026-03-29T17:25:22.836Z'
+  - path: squads/design/templates/ds-migration-strategy-tmpl.md
+    timestamp: '2026-03-29T17:25:22.848Z'
+  - path: squads/design/templates/ds-state-persistence-tmpl.yaml
+    timestamp: '2026-03-29T17:25:22.864Z'
+  - path: squads/design/templates/ds-tokens-schema-tmpl.yaml
+    timestamp: '2026-03-29T17:25:22.876Z'
+  - path: squads/design/templates/migration-strategy-tmpl.md
+    timestamp: '2026-03-29T17:25:22.896Z'
+  - path: squads/design/templates/reading-design-tokens.css
+    timestamp: '2026-03-29T17:25:22.916Z'
+  - path: squads/design/templates/state-persistence-tmpl.yaml
+    timestamp: '2026-03-29T17:25:22.916Z'
+  - path: squads/design/templates/tokens-schema-tmpl.yaml
+    timestamp: '2026-03-29T17:25:22.928Z'
+  - path: squads/design/workflows/agentic-readiness.yaml
+    timestamp: '2026-03-29T17:25:22.940Z'
+  - path: squads/design/workflows/audit-only.yaml
+    timestamp: '2026-03-29T17:25:22.952Z'
+  - path: squads/design/workflows/brownfield-complete.yaml
+    timestamp: '2026-03-29T17:25:22.968Z'
+  - path: squads/design/workflows/critical-eye.yaml
+    timestamp: '2026-03-29T17:25:22.980Z'
+  - path: squads/design/workflows/dtcg-tokens-governance.yaml
+    timestamp: '2026-03-29T17:25:22.988Z'
+  - path: squads/design/workflows/foundations-pipeline.yaml
+    timestamp: '2026-03-29T17:25:22.992Z'
+  - path: squads/design/workflows/greenfield-new.yaml
+    timestamp: '2026-03-29T17:25:22.996Z'
+  - path: squads/design/workflows/motion-quality.yaml
+    timestamp: '2026-03-29T17:25:23.004Z'
+  - path: squads/design/workflows/self-healing-workflow.yaml
+    timestamp: '2026-03-29T17:25:23.044Z'
+  - path: squads/design/workflows/storybook-brownfield-migration.yaml
+    timestamp: '2026-03-29T17:25:23.084Z'
+  - path: squads/design/workflows/storybook-full-setup.yaml
+    timestamp: '2026-03-29T17:25:23.120Z'
+  - path: squads/index.js
+    timestamp: '2026-03-29T17:25:23.124Z'
+  - path: squads/squad-creator-pro/.state.json
+    timestamp: '2026-03-29T17:25:23.128Z'
+  - path: squads/squad-creator-pro/CHANGELOG.md
+    timestamp: '2026-03-29T17:25:23.136Z'
+  - path: squads/squad-creator-pro/HEADLINE.md
+    timestamp: '2026-03-29T17:25:23.144Z'
+  - path: squads/squad-creator-pro/README.md
+    timestamp: '2026-03-29T17:25:23.156Z'
+  - path: squads/squad-creator-pro/agents/oalanicolas.md
+    timestamp: '2026-03-29T17:25:23.180Z'
+  - path: squads/squad-creator-pro/agents/pedro-valerio.md
+    timestamp: '2026-03-29T17:25:23.200Z'
+  - path: squads/squad-creator-pro/agents/squad-chief.md
+    timestamp: '2026-03-29T17:25:23.216Z'
+  - path: squads/squad-creator-pro/agents/thiago_finch.md
+    timestamp: '2026-03-29T17:25:23.216Z'
+  - path: >-
+      squads/squad-creator-pro/assessments/axioma-assessment-wf-create-squad.yaml
+    timestamp: '2026-03-29T17:25:23.216Z'
+  - path: squads/squad-creator-pro/checklists/.gitkeep
+    timestamp: '2026-03-29T17:25:23.232Z'
+  - path: squads/squad-creator-pro/checklists/agent-depth-checklist.md
+    timestamp: '2026-03-29T17:25:23.248Z'
+  - path: squads/squad-creator-pro/checklists/agent-quality-gate.md
+    timestamp: '2026-03-29T17:25:23.256Z'
+  - path: squads/squad-creator-pro/checklists/create-agent-checklist.md
+    timestamp: '2026-03-29T17:25:23.260Z'
+  - path: squads/squad-creator-pro/checklists/create-squad-checklist.md
+    timestamp: '2026-03-29T17:25:23.276Z'
+  - path: squads/squad-creator-pro/checklists/create-workflow-checklist.md
+    timestamp: '2026-03-29T17:25:23.296Z'
+  - path: squads/squad-creator-pro/checklists/deep-research-quality.md
+    timestamp: '2026-03-29T17:25:23.304Z'
+  - path: squads/squad-creator-pro/checklists/executor-matrix-checklist.md
+    timestamp: '2026-03-29T17:25:23.312Z'
+  - path: squads/squad-creator-pro/checklists/mental-model-integration-checklist.md
+    timestamp: '2026-03-29T17:25:23.316Z'
+  - path: squads/squad-creator-pro/checklists/mind-validation.md
+    timestamp: '2026-03-29T17:25:23.320Z'
+  - path: squads/squad-creator-pro/checklists/quality-gate-checklist.md
+    timestamp: '2026-03-29T17:25:23.328Z'
+  - path: squads/squad-creator-pro/checklists/smoke-test-agent.md
+    timestamp: '2026-03-29T17:25:23.336Z'
+  - path: squads/squad-creator-pro/checklists/sop-validation.md
+    timestamp: '2026-03-29T17:25:23.348Z'
+  - path: squads/squad-creator-pro/checklists/squad-checklist.md
+    timestamp: '2026-03-29T17:25:23.364Z'
+  - path: squads/squad-creator-pro/checklists/squad-overview-checklist.md
+    timestamp: '2026-03-29T17:25:23.376Z'
+  - path: squads/squad-creator-pro/checklists/task-anatomy-checklist.md
+    timestamp: '2026-03-29T17:25:23.384Z'
+  - path: squads/squad-creator-pro/config/.gitkeep
+    timestamp: '2026-03-29T17:25:23.392Z'
+  - path: squads/squad-creator-pro/config/axioma-validator.yaml
+    timestamp: '2026-03-29T17:25:23.396Z'
+  - path: squads/squad-creator-pro/config/heuristics.yaml
+    timestamp: '2026-03-29T17:25:23.408Z'
+  - path: squads/squad-creator-pro/config/model-routing.yaml
+    timestamp: '2026-03-29T17:25:23.420Z'
+  - path: squads/squad-creator-pro/config/quality-gates.yaml
+    timestamp: '2026-03-29T17:25:23.428Z'
+  - path: squads/squad-creator-pro/config/scoring-rubric.yaml
+    timestamp: '2026-03-29T17:25:23.444Z'
+  - path: squads/squad-creator-pro/config/squad-config.yaml
+    timestamp: '2026-03-29T17:25:23.456Z'
+  - path: squads/squad-creator-pro/config/task-anatomy.yaml
+    timestamp: '2026-03-29T17:25:23.468Z'
+  - path: squads/squad-creator-pro/config/veto-conditions.yaml
+    timestamp: '2026-03-29T17:25:23.480Z'
+  - path: squads/squad-creator-pro/config.yaml
+    timestamp: '2026-03-29T17:25:23.504Z'
+  - path: squads/squad-creator-pro/data/.gitkeep
+    timestamp: '2026-03-29T17:25:23.516Z'
+  - path: squads/squad-creator-pro/data/an-anchor-words.yaml
+    timestamp: '2026-03-29T17:25:23.528Z'
+  - path: squads/squad-creator-pro/data/an-clone-anti-patterns.yaml
+    timestamp: '2026-03-29T17:25:23.536Z'
+  - path: squads/squad-creator-pro/data/an-clone-validation.yaml
+    timestamp: '2026-03-29T17:25:23.540Z'
+  - path: squads/squad-creator-pro/data/an-diagnostic-framework.yaml
+    timestamp: '2026-03-29T17:25:23.560Z'
+  - path: squads/squad-creator-pro/data/an-output-examples.yaml
+    timestamp: '2026-03-29T17:25:23.568Z'
+  - path: squads/squad-creator-pro/data/an-source-signals.yaml
+    timestamp: '2026-03-29T17:25:23.572Z'
+  - path: squads/squad-creator-pro/data/an-source-tiers.yaml
+    timestamp: '2026-03-29T17:25:23.584Z'
+  - path: squads/squad-creator-pro/data/best-practices.md
+    timestamp: '2026-03-29T17:25:23.588Z'
+  - path: squads/squad-creator-pro/data/core-heuristics.md
+    timestamp: '2026-03-29T17:25:23.604Z'
+  - path: squads/squad-creator-pro/data/decision-heuristics-framework.md
+    timestamp: '2026-03-29T17:25:23.612Z'
+  - path: squads/squad-creator-pro/data/executor-decision-tree.md
+    timestamp: '2026-03-29T17:25:23.620Z'
+  - path: squads/squad-creator-pro/data/executor-matrix-framework.md
+    timestamp: '2026-03-29T17:25:23.628Z'
+  - path: squads/squad-creator-pro/data/fusion-decision-points-analysis.md
+    timestamp: '2026-03-29T17:25:23.632Z'
+  - path: squads/squad-creator-pro/data/fusion-executor-analysis.md
+    timestamp: '2026-03-29T17:25:23.652Z'
+  - path: squads/squad-creator-pro/data/hybridops-patterns.md
+    timestamp: '2026-03-29T17:25:23.664Z'
+  - path: squads/squad-creator-pro/data/internal-infrastructure-library.yaml
+    timestamp: '2026-03-29T17:25:23.688Z'
+  - path: squads/squad-creator-pro/data/mental-model-task-matrix.yaml
+    timestamp: '2026-03-29T17:25:23.692Z'
+  - path: squads/squad-creator-pro/data/pipeline-patterns.md
+    timestamp: '2026-03-29T17:25:23.700Z'
+  - path: squads/squad-creator-pro/data/pm-best-practices.md
+    timestamp: '2026-03-29T17:25:23.708Z'
+  - path: squads/squad-creator-pro/data/pv-anchor-words.yaml
+    timestamp: '2026-03-29T17:25:23.720Z'
+  - path: squads/squad-creator-pro/data/pv-authenticity-markers.yaml
+    timestamp: '2026-03-29T17:25:23.720Z'
+  - path: squads/squad-creator-pro/data/pv-meta-axiomas.yaml
+    timestamp: '2026-03-29T17:25:23.724Z'
+  - path: squads/squad-creator-pro/data/pv-output-examples.yaml
+    timestamp: '2026-03-29T17:25:23.728Z'
+  - path: squads/squad-creator-pro/data/pv-workflow-validation.yaml
+    timestamp: '2026-03-29T17:25:23.732Z'
+  - path: squads/squad-creator-pro/data/quality-dimensions-framework.md
+    timestamp: '2026-03-29T17:25:23.740Z'
+  - path: squads/squad-creator-pro/data/squad-analytics-guide.md
+    timestamp: '2026-03-29T17:25:23.744Z'
+  - path: squads/squad-creator-pro/data/squad-kb.md
+    timestamp: '2026-03-29T17:25:23.744Z'
+  - path: squads/squad-creator-pro/data/squad-registry.yaml
+    timestamp: '2026-03-29T17:25:23.756Z'
+  - path: squads/squad-creator-pro/data/squad-type-definitions.yaml
+    timestamp: '2026-03-29T17:25:23.772Z'
+  - path: squads/squad-creator-pro/data/tier-system-framework.md
+    timestamp: '2026-03-29T17:25:23.792Z'
+  - path: squads/squad-creator-pro/data/tool-evaluation-framework.md
+    timestamp: '2026-03-29T17:25:23.796Z'
+  - path: squads/squad-creator-pro/data/tool-registry.yaml
+    timestamp: '2026-03-29T17:25:23.800Z'
+  - path: squads/squad-creator-pro/docs/ADR-001-model-tier-qualification.md
+    timestamp: '2026-03-29T17:25:23.808Z'
+  - path: squads/squad-creator-pro/docs/AGENT-COLLABORATION.md
+    timestamp: '2026-03-29T17:25:23.812Z'
+  - path: squads/squad-creator-pro/docs/ARCHITECTURE-DIAGRAMS.md
+    timestamp: '2026-03-29T17:25:23.816Z'
+  - path: squads/squad-creator-pro/docs/COMMANDS.md
+    timestamp: '2026-03-29T17:25:23.820Z'
+  - path: squads/squad-creator-pro/docs/CONCEPTS.md
+    timestamp: '2026-03-29T17:25:23.828Z'
+  - path: squads/squad-creator-pro/docs/FAQ.md
+    timestamp: '2026-03-29T17:25:23.832Z'
+  - path: squads/squad-creator-pro/docs/HITL-FLOW.md
+    timestamp: '2026-03-29T17:25:23.836Z'
+  - path: squads/squad-creator-pro/docs/MIGRATION-PLAN-AGENT-CONFORMITY.md
+    timestamp: '2026-03-29T17:25:23.852Z'
+  - path: squads/squad-creator-pro/docs/MIGRATION-ROADMAP-HYBRIDOPS.md
+    timestamp: '2026-03-29T17:25:23.856Z'
+  - path: squads/squad-creator-pro/docs/MODEL-TIER-QUALIFICATION.md
+    timestamp: '2026-03-29T17:25:23.864Z'
+  - path: squads/squad-creator-pro/docs/PATTERN-LIBRARY.md
+    timestamp: '2026-03-29T17:25:23.868Z'
+  - path: squads/squad-creator-pro/docs/PEDRO-VALERIO-ARCHITECTURE.md
+    timestamp: '2026-03-29T17:25:23.872Z'
+  - path: squads/squad-creator-pro/docs/POR-ONDE-COMECAR.md
+    timestamp: '2026-03-29T17:25:23.876Z'
+  - path: squads/squad-creator-pro/docs/QUICK-START.md
+    timestamp: '2026-03-29T17:25:23.880Z'
+  - path: squads/squad-creator-pro/docs/RFC-001-deterministic-refactoring.md
+    timestamp: '2026-03-29T17:25:23.884Z'
+  - path: squads/squad-creator-pro/docs/TOOL-RECOMMENDATIONS.md
+    timestamp: '2026-03-29T17:25:23.888Z'
+  - path: squads/squad-creator-pro/docs/TROUBLESHOOTING.md
+    timestamp: '2026-03-29T17:25:23.892Z'
+  - path: squads/squad-creator-pro/docs/TUTORIAL-COMPLETO.md
+    timestamp: '2026-03-29T17:25:23.900Z'
+  - path: squads/squad-creator-pro/docs/optimize-v4-proposal.md
+    timestamp: '2026-03-29T17:25:23.904Z'
+  - path: squads/squad-creator-pro/docs/session-report-2026-02-01.md
+    timestamp: '2026-03-29T17:25:23.908Z'
+  - path: squads/squad-creator-pro/docs/sop-extraction-process.md
+    timestamp: '2026-03-29T17:25:23.908Z'
+  - path: squads/squad-creator-pro/docs/squad-chief-agent-flow.md
+    timestamp: '2026-03-29T17:25:23.916Z'
+  - path: squads/squad-creator-pro/docs/squad-creation-pipeline-workflow.md
+    timestamp: '2026-03-29T17:25:23.928Z'
+  - path: squads/squad-creator-pro/docs/task-optimization-framework.md
+    timestamp: '2026-03-29T17:25:23.936Z'
+  - path: squads/squad-creator-pro/docs/validation-report-2026-02-01.md
+    timestamp: '2026-03-29T17:25:23.940Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/artifacts/HANDOFF_PROTOCOL.md
+    timestamp: '2026-03-29T17:25:23.956Z'
+  - path: >-
+      squads/squad-creator-pro/minds/oalanicolas/artifacts/SOURCE_CLASSIFICATION.md
+    timestamp: '2026-03-29T17:25:23.964Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_001.md
+    timestamp: '2026-03-29T17:25:23.972Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_002.md
+    timestamp: '2026-03-29T17:25:23.976Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_003.md
+    timestamp: '2026-03-29T17:25:23.980Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_004.md
+    timestamp: '2026-03-29T17:25:23.984Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_005.md
+    timestamp: '2026-03-29T17:25:23.988Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_006.md
+    timestamp: '2026-03-29T17:25:23.996Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_007.md
+    timestamp: '2026-03-29T17:25:24.008Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_008.md
+    timestamp: '2026-03-29T17:25:24.012Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_009.md
+    timestamp: '2026-03-29T17:25:24.016Z'
+  - path: squads/squad-creator-pro/minds/oalanicolas/heuristics/AN_KE_010.md
+    timestamp: '2026-03-29T17:25:24.028Z'
+  - path: >-
+      squads/squad-creator-pro/minds/pedro_valerio/artifacts/Assinatura_Linguistica.md
+    timestamp: '2026-03-29T17:25:24.048Z'
+  - path: squads/squad-creator-pro/minds/pedro_valerio/artifacts/META_AXIOMAS.md
+    timestamp: '2026-03-29T17:25:24.056Z'
+  - path: squads/squad-creator-pro/minds/pedro_valerio/heuristics/PV_BS_001.md
+    timestamp: '2026-03-29T17:25:24.064Z'
+  - path: squads/squad-creator-pro/minds/pedro_valerio/heuristics/PV_PA_001.md
+    timestamp: '2026-03-29T17:25:24.080Z'
+  - path: squads/squad-creator-pro/minds/pedro_valerio/heuristics/PV_PM_001.md
+    timestamp: '2026-03-29T17:25:24.092Z'
+  - path: squads/squad-creator-pro/package.json
+    timestamp: '2026-03-29T17:25:24.100Z'
+  - path: squads/squad-creator-pro/protocols/ai-first-governance.md
+    timestamp: '2026-03-29T17:25:24.104Z'
+  - path: squads/squad-creator-pro/scripts/README.md
+    timestamp: '2026-03-29T17:25:24.112Z'
+  - path: >-
+      squads/squad-creator-pro/scripts/__pycache__/dependency_check.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.116Z'
+  - path: squads/squad-creator-pro/scripts/__pycache__/inventory.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.120Z'
+  - path: >-
+      squads/squad-creator-pro/scripts/__pycache__/naming_validator.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.128Z'
+  - path: squads/squad-creator-pro/scripts/__pycache__/quality_gate.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.132Z'
+  - path: squads/squad-creator-pro/scripts/__pycache__/scoring.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.136Z'
+  - path: >-
+      squads/squad-creator-pro/scripts/__pycache__/yaml_validator.cpython-314.pyc
+    timestamp: '2026-03-29T17:25:24.140Z'
+  - path: squads/squad-creator-pro/scripts/assess-sources.sh
+    timestamp: '2026-03-29T17:25:24.144Z'
+  - path: squads/squad-creator-pro/scripts/checklist_validator.py
+    timestamp: '2026-03-29T17:25:24.148Z'
+  - path: squads/squad-creator-pro/scripts/clone-review.sh
+    timestamp: '2026-03-29T17:25:24.152Z'
+  - path: squads/squad-creator-pro/scripts/coherence-validator.py
+    timestamp: '2026-03-29T17:25:24.160Z'
+  - path: squads/squad-creator-pro/scripts/create-agent-preflight.py
+    timestamp: '2026-03-29T17:25:24.164Z'
+  - path: squads/squad-creator-pro/scripts/cross-provider/compare-results.js
+    timestamp: '2026-03-29T17:25:24.172Z'
+  - path: squads/squad-creator-pro/scripts/cross-provider/cross-provider-runner.js
+    timestamp: '2026-03-29T17:25:24.184Z'
+  - path: squads/squad-creator-pro/scripts/dependency_check.py
+    timestamp: '2026-03-29T17:25:24.188Z'
+  - path: squads/squad-creator-pro/scripts/fidelity-score.sh
+    timestamp: '2026-03-29T17:25:24.196Z'
+  - path: squads/squad-creator-pro/scripts/generate-squad-greeting.js
+    timestamp: '2026-03-29T17:25:24.200Z'
+  - path: squads/squad-creator-pro/scripts/generate-squad-guide.js
+    timestamp: '2026-03-29T17:25:24.208Z'
+  - path: squads/squad-creator-pro/scripts/inventory.py
+    timestamp: '2026-03-29T17:25:24.220Z'
+  - path: squads/squad-creator-pro/scripts/lib/config-loader.js
+    timestamp: '2026-03-29T17:25:24.224Z'
+  - path: squads/squad-creator-pro/scripts/model-tier-validator.cjs
+    timestamp: '2026-03-29T17:25:24.228Z'
+  - path: squads/squad-creator-pro/scripts/model-usage-logger.cjs
+    timestamp: '2026-03-29T17:25:24.232Z'
+  - path: squads/squad-creator-pro/scripts/modernization-score.sh
+    timestamp: '2026-03-29T17:25:24.236Z'
+  - path: squads/squad-creator-pro/scripts/naming_validator.py
+    timestamp: '2026-03-29T17:25:24.240Z'
+  - path: squads/squad-creator-pro/scripts/on-specialist-complete.py
+    timestamp: '2026-03-29T17:25:24.244Z'
+  - path: squads/squad-creator-pro/scripts/quality_gate.py
+    timestamp: '2026-03-29T17:25:24.248Z'
+  - path: squads/squad-creator-pro/scripts/refresh-registry.py
+    timestamp: '2026-03-29T17:25:24.252Z'
+  - path: squads/squad-creator-pro/scripts/save-session-metrics.py
+    timestamp: '2026-03-29T17:25:24.256Z'
+  - path: squads/squad-creator-pro/scripts/scaffold-squad.cjs
+    timestamp: '2026-03-29T17:25:24.264Z'
+  - path: squads/squad-creator-pro/scripts/scoring.py
+    timestamp: '2026-03-29T17:25:24.268Z'
+  - path: squads/squad-creator-pro/scripts/security_scanner.py
+    timestamp: '2026-03-29T17:25:24.276Z'
+  - path: squads/squad-creator-pro/scripts/squad-analytics.py
+    timestamp: '2026-03-29T17:25:24.276Z'
+  - path: squads/squad-creator-pro/scripts/squad-context-loader.cjs
+    timestamp: '2026-03-29T17:25:24.284Z'
+  - path: squads/squad-creator-pro/scripts/squad-state-manager.cjs
+    timestamp: '2026-03-29T17:25:24.288Z'
+  - path: squads/squad-creator-pro/scripts/squad-workflow-runner.cjs
+    timestamp: '2026-03-29T17:25:24.292Z'
+  - path: squads/squad-creator-pro/scripts/squad_utils.py
+    timestamp: '2026-03-29T17:25:24.292Z'
+  - path: squads/squad-creator-pro/scripts/sync-ide-command.py
+    timestamp: '2026-03-29T17:25:24.296Z'
+  - path: squads/squad-creator-pro/scripts/tests/__init__.py
+    timestamp: '2026-03-29T17:25:24.304Z'
+  - path: squads/squad-creator-pro/scripts/tests/conftest.py
+    timestamp: '2026-03-29T17:25:24.308Z'
+  - path: squads/squad-creator-pro/scripts/tests/run_bash_tests.sh
+    timestamp: '2026-03-29T17:25:24.312Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_assess_sources.sh
+    timestamp: '2026-03-29T17:25:24.316Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_checklist_validator.py
+    timestamp: '2026-03-29T17:25:24.320Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_clone_review.sh
+    timestamp: '2026-03-29T17:25:24.324Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_coherence_validator.py
+    timestamp: '2026-03-29T17:25:24.332Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_dependency_check.py
+    timestamp: '2026-03-29T17:25:24.340Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_fidelity_score.sh
+    timestamp: '2026-03-29T17:25:24.344Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_inventory.py
+    timestamp: '2026-03-29T17:25:24.348Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_modernization_score.sh
+    timestamp: '2026-03-29T17:25:24.352Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_naming_validator.py
+    timestamp: '2026-03-29T17:25:24.356Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_quality_gate.py
+    timestamp: '2026-03-29T17:25:24.360Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_refresh_registry.py
+    timestamp: '2026-03-29T17:25:24.360Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_scoring.py
+    timestamp: '2026-03-29T17:25:24.368Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_security_scanner.py
+    timestamp: '2026-03-29T17:25:24.372Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_squad_analytics.py
+    timestamp: '2026-03-29T17:25:24.376Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_validate_clone.sh
+    timestamp: '2026-03-29T17:25:24.384Z'
+  - path: squads/squad-creator-pro/scripts/tests/test_yaml_validator.py
+    timestamp: '2026-03-29T17:25:24.392Z'
+  - path: squads/squad-creator-pro/scripts/validate-agent-output.py
+    timestamp: '2026-03-29T17:25:24.396Z'
+  - path: squads/squad-creator-pro/scripts/validate-all.sh
+    timestamp: '2026-03-29T17:25:24.400Z'
+  - path: squads/squad-creator-pro/scripts/validate-squad-structure.py
+    timestamp: '2026-03-29T17:25:24.400Z'
+  - path: squads/squad-creator-pro/scripts/validate-squad.sh
+    timestamp: '2026-03-29T17:25:24.408Z'
+  - path: squads/squad-creator-pro/scripts/yaml_validator.py
+    timestamp: '2026-03-29T17:25:24.412Z'
+  - path: squads/squad-creator-pro/skills/squad.md
+    timestamp: '2026-03-29T17:25:24.416Z'
+  - path: squads/squad-creator-pro/squad.yaml
+    timestamp: '2026-03-29T17:25:24.424Z'
+  - path: squads/squad-creator-pro/tasks/CHANGELOG.md
+    timestamp: '2026-03-29T17:25:24.428Z'
+  - path: squads/squad-creator-pro/tasks/an-assess-sources.md
+    timestamp: '2026-03-29T17:25:24.432Z'
+  - path: squads/squad-creator-pro/tasks/an-clone-review.md
+    timestamp: '2026-03-29T17:25:24.436Z'
+  - path: squads/squad-creator-pro/tasks/an-compare-outputs.md
+    timestamp: '2026-03-29T17:25:24.440Z'
+  - path: squads/squad-creator-pro/tasks/an-design-clone.md
+    timestamp: '2026-03-29T17:25:24.448Z'
+  - path: squads/squad-creator-pro/tasks/an-diagnose-clone.md
+    timestamp: '2026-03-29T17:25:24.452Z'
+  - path: squads/squad-creator-pro/tasks/an-extract-dna.md
+    timestamp: '2026-03-29T17:25:24.456Z'
+  - path: squads/squad-creator-pro/tasks/an-extract-framework.md
+    timestamp: '2026-03-29T17:25:24.464Z'
+  - path: squads/squad-creator-pro/tasks/an-fidelity-score.md
+    timestamp: '2026-03-29T17:25:24.468Z'
+  - path: squads/squad-creator-pro/tasks/an-validate-clone.md
+    timestamp: '2026-03-29T17:25:24.472Z'
+  - path: squads/squad-creator-pro/tasks/auto-acquire-sources.md
+    timestamp: '2026-03-29T17:25:24.488Z'
+  - path: squads/squad-creator-pro/tasks/collect-sources.md
+    timestamp: '2026-03-29T17:25:24.496Z'
+  - path: squads/squad-creator-pro/tasks/create-agent.md
+    timestamp: '2026-03-29T17:25:24.504Z'
+  - path: squads/squad-creator-pro/tasks/create-documentation.md
+    timestamp: '2026-03-29T17:25:24.520Z'
+  - path: squads/squad-creator-pro/tasks/create-pipeline.md
+    timestamp: '2026-03-29T17:25:24.524Z'
+  - path: squads/squad-creator-pro/tasks/create-squad.md
+    timestamp: '2026-03-29T17:25:24.528Z'
+  - path: squads/squad-creator-pro/tasks/create-task.md
+    timestamp: '2026-03-29T17:25:24.540Z'
+  - path: squads/squad-creator-pro/tasks/create-template.md
+    timestamp: '2026-03-29T17:25:24.544Z'
+  - path: squads/squad-creator-pro/tasks/create-workflow.md
+    timestamp: '2026-03-29T17:25:24.552Z'
+  - path: squads/squad-creator-pro/tasks/deconstruct.md
+    timestamp: '2026-03-29T17:25:24.556Z'
+  - path: squads/squad-creator-pro/tasks/deep-research-pre-agent.md
+    timestamp: '2026-03-29T17:25:24.560Z'
+  - path: squads/squad-creator-pro/tasks/detect-squad-context.md
+    timestamp: '2026-03-29T17:25:24.576Z'
+  - path: squads/squad-creator-pro/tasks/discover-tools.md
+    timestamp: '2026-03-29T17:25:24.584Z'
+  - path: squads/squad-creator-pro/tasks/extract-implicit.md
+    timestamp: '2026-03-29T17:25:24.616Z'
+  - path: squads/squad-creator-pro/tasks/extract-knowledge.md
+    timestamp: '2026-03-29T17:25:24.636Z'
+  - path: squads/squad-creator-pro/tasks/extract-sop.md
+    timestamp: '2026-03-29T17:25:24.640Z'
+  - path: squads/squad-creator-pro/tasks/extract-thinking-dna.md
+    timestamp: '2026-03-29T17:25:24.648Z'
+  - path: squads/squad-creator-pro/tasks/extract-voice-dna.md
+    timestamp: '2026-03-29T17:25:24.656Z'
+  - path: squads/squad-creator-pro/tasks/find-0.8.md
+    timestamp: '2026-03-29T17:25:24.692Z'
+  - path: squads/squad-creator-pro/tasks/install-commands.md
+    timestamp: '2026-03-29T17:25:24.696Z'
+  - path: squads/squad-creator-pro/tasks/lookup-model.md
+    timestamp: '2026-03-29T17:25:24.700Z'
+  - path: squads/squad-creator-pro/tasks/migrate-workflows-to-yaml.md
+    timestamp: '2026-03-29T17:25:24.704Z'
+  - path: squads/squad-creator-pro/tasks/next-squad.md
+    timestamp: '2026-03-29T17:25:24.704Z'
+  - path: squads/squad-creator-pro/tasks/optimize-workflow.md
+    timestamp: '2026-03-29T17:25:24.708Z'
+  - path: squads/squad-creator-pro/tasks/optimize.md
+    timestamp: '2026-03-29T17:25:24.744Z'
+  - path: squads/squad-creator-pro/tasks/parallel-discovery.md
+    timestamp: '2026-03-29T17:25:24.752Z'
+  - path: squads/squad-creator-pro/tasks/pv-audit.md
+    timestamp: '2026-03-29T17:25:24.756Z'
+  - path: squads/squad-creator-pro/tasks/pv-axioma-assessment-wf-clone-mind.yaml
+    timestamp: '2026-03-29T17:25:24.780Z'
+  - path: squads/squad-creator-pro/tasks/pv-axioma-assessment.md
+    timestamp: '2026-03-29T17:25:24.788Z'
+  - path: squads/squad-creator-pro/tasks/pv-modernization-score.md
+    timestamp: '2026-03-29T17:25:24.796Z'
+  - path: squads/squad-creator-pro/tasks/qa-after-creation.md
+    timestamp: '2026-03-29T17:25:24.804Z'
+  - path: squads/squad-creator-pro/tasks/qualify-task.md
+    timestamp: '2026-03-29T17:25:24.816Z'
+  - path: squads/squad-creator-pro/tasks/reexecute-squad-phase.md
+    timestamp: '2026-03-29T17:25:24.820Z'
+  - path: squads/squad-creator-pro/tasks/refresh-registry.md
+    timestamp: '2026-03-29T17:25:24.824Z'
+  - path: squads/squad-creator-pro/tasks/smoke-test-model-routing.md
+    timestamp: '2026-03-29T17:25:24.828Z'
+  - path: squads/squad-creator-pro/tasks/squad-analytics.md
+    timestamp: '2026-03-29T17:25:24.832Z'
+  - path: squads/squad-creator-pro/tasks/squad-fusion.md
+    timestamp: '2026-03-29T17:25:24.836Z'
+  - path: squads/squad-creator-pro/tasks/squad-overview.md
+    timestamp: '2026-03-29T17:25:24.840Z'
+  - path: squads/squad-creator-pro/tasks/sync-ide-command.md
+    timestamp: '2026-03-29T17:25:24.844Z'
+  - path: squads/squad-creator-pro/tasks/update-mind.md
+    timestamp: '2026-03-29T17:25:24.848Z'
+  - path: squads/squad-creator-pro/tasks/upgrade-squad.md
+    timestamp: '2026-03-29T17:25:24.852Z'
+  - path: squads/squad-creator-pro/tasks/validate-extraction.md
+    timestamp: '2026-03-29T17:25:24.856Z'
+  - path: squads/squad-creator-pro/tasks/validate-final-artifacts.md
+    timestamp: '2026-03-29T17:25:24.860Z'
+  - path: squads/squad-creator-pro/tasks/validate-squad.md
+    timestamp: '2026-03-29T17:25:24.864Z'
+  - path: squads/squad-creator-pro/templates/.gitkeep
+    timestamp: '2026-03-29T17:25:24.876Z'
+  - path: squads/squad-creator-pro/templates/agent-flow-doc-tmpl.md
+    timestamp: '2026-03-29T17:25:24.880Z'
+  - path: squads/squad-creator-pro/templates/agent-tmpl.md
+    timestamp: '2026-03-29T17:25:24.888Z'
+  - path: squads/squad-creator-pro/templates/config-tmpl.yaml
+    timestamp: '2026-03-29T17:25:24.896Z'
+  - path: squads/squad-creator-pro/templates/handoff-insumos-tmpl.yaml
+    timestamp: '2026-03-29T17:25:24.900Z'
+  - path: squads/squad-creator-pro/templates/orchestrator-tmpl.md
+    timestamp: '2026-03-29T17:25:24.904Z'
+  - path: squads/squad-creator-pro/templates/pipeline-progress-tmpl.py
+    timestamp: '2026-03-29T17:25:24.908Z'
+  - path: squads/squad-creator-pro/templates/pipeline-runner-tmpl.py
+    timestamp: '2026-03-29T17:25:24.912Z'
+  - path: squads/squad-creator-pro/templates/pipeline-state-tmpl.py
+    timestamp: '2026-03-29T17:25:24.924Z'
+  - path: squads/squad-creator-pro/templates/pop-extractor-prompt.md
+    timestamp: '2026-03-29T17:25:24.932Z'
+  - path: squads/squad-creator-pro/templates/quality-dashboard-tmpl.md
+    timestamp: '2026-03-29T17:25:24.960Z'
+  - path: squads/squad-creator-pro/templates/quality-gate-tmpl.yaml
+    timestamp: '2026-03-29T17:25:24.960Z'
+  - path: squads/squad-creator-pro/templates/readme-tmpl.md
+    timestamp: '2026-03-29T17:25:24.964Z'
+  - path: squads/squad-creator-pro/templates/research-output-tmpl.md
+    timestamp: '2026-03-29T17:25:24.968Z'
+  - path: squads/squad-creator-pro/templates/research-prompt-tmpl.md
+    timestamp: '2026-03-29T17:25:24.976Z'
+  - path: squads/squad-creator-pro/templates/squad-prd-tmpl.md
+    timestamp: '2026-03-29T17:25:24.980Z'
+  - path: squads/squad-creator-pro/templates/squad-readme-tmpl.md
+    timestamp: '2026-03-29T17:25:24.984Z'
+  - path: squads/squad-creator-pro/templates/story-create-agent-tmpl.md
+    timestamp: '2026-03-29T17:25:24.988Z'
+  - path: squads/squad-creator-pro/templates/task-tmpl.md
+    timestamp: '2026-03-29T17:25:24.992Z'
+  - path: squads/squad-creator-pro/templates/template-tmpl.yaml
+    timestamp: '2026-03-29T17:25:24.996Z'
+  - path: squads/squad-creator-pro/templates/workflow-doc-tmpl.md
+    timestamp: '2026-03-29T17:25:25.000Z'
+  - path: squads/squad-creator-pro/templates/workflow-tmpl.yaml
+    timestamp: '2026-03-29T17:25:25.004Z'
+  - path: squads/squad-creator-pro/test-cases/BATCH-PROGRESS.md
+    timestamp: '2026-03-29T17:25:25.012Z'
+  - path: squads/squad-creator-pro/test-cases/QUALIFICATION-DASHBOARD.yaml
+    timestamp: '2026-03-29T17:25:25.012Z'
+  - path: squads/squad-creator-pro/test-cases/_template.yaml
+    timestamp: '2026-03-29T17:25:25.020Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/ASSESSMENT-SUMMARY.md
+    timestamp: '2026-03-29T17:25:25.024Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/ASSESSMENT_SUMMARY.md
+    timestamp: '2026-03-29T17:25:25.028Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/CHECKPOINT_MATRIX.md
+    timestamp: '2026-03-29T17:25:25.028Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/EXECUTION-REPORT.md
+    timestamp: '2026-03-29T17:25:25.032Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/EXECUTION_NOTES.md
+    timestamp: '2026-03-29T17:25:25.036Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/README-v2.2.2.md
+    timestamp: '2026-03-29T17:25:25.040Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/README.md
+    timestamp: '2026-03-29T17:25:25.044Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/TEST-REPORT-v2.1.md
+    timestamp: '2026-03-29T17:25:25.048Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/VERIFICATION-CHECKLIST.txt
+    timestamp: '2026-03-29T17:25:25.052Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/formal-qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.056Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/haiku-output.yaml
+    timestamp: '2026-03-29T17:25:25.060Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/haiku-v2.1-output.yaml
+    timestamp: '2026-03-29T17:25:25.064Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/haiku-v2.2.1-output.yaml
+    timestamp: '2026-03-29T17:25:25.068Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/haiku-v2.2.2-output.yaml
+    timestamp: '2026-03-29T17:25:25.076Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.080Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-assess-sources/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.080Z'
+  - path: squads/squad-creator-pro/test-cases/an-assess-sources/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.084Z'
+  - path: squads/squad-creator-pro/test-cases/an-clone-review/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.092Z'
+  - path: squads/squad-creator-pro/test-cases/an-clone-review/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.096Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-clone-review/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.104Z'
+  - path: squads/squad-creator-pro/test-cases/an-design-clone/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.108Z'
+  - path: squads/squad-creator-pro/test-cases/an-extract-dna/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.112Z'
+  - path: squads/squad-creator-pro/test-cases/an-fidelity-score/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.116Z'
+  - path: squads/squad-creator-pro/test-cases/an-fidelity-score/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.120Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-fidelity-score/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.128Z'
+  - path: squads/squad-creator-pro/test-cases/an-validate-clone/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.132Z'
+  - path: squads/squad-creator-pro/test-cases/an-validate-clone/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.136Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/an-validate-clone/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.140Z'
+  - path: squads/squad-creator-pro/test-cases/collect-sources/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.144Z'
+  - path: squads/squad-creator-pro/test-cases/create-task/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.148Z'
+  - path: squads/squad-creator-pro/test-cases/cross-provider/DASHBOARD.yaml
+    timestamp: '2026-03-29T17:25:25.152Z'
+  - path: squads/squad-creator-pro/test-cases/pv-audit/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.156Z'
+  - path: squads/squad-creator-pro/test-cases/pv-axioma-assessment/haiku-output.yaml
+    timestamp: '2026-03-29T17:25:25.160Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-axioma-assessment/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.160Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-axioma-assessment/sonnet-output.yaml
+    timestamp: '2026-03-29T17:25:25.164Z'
+  - path: squads/squad-creator-pro/test-cases/pv-axioma-assessment/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.168Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-modernization-score/comparison-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.172Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-modernization-score/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.176Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-modernization-score/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.180Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/pv-modernization-score/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.184Z'
+  - path: squads/squad-creator-pro/test-cases/qa-after-creation/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.188Z'
+  - path: squads/squad-creator-pro/test-cases/qa-after-creation/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.192Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/qa-after-creation/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.200Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/smoke-test-model-routing/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.204Z'
+  - path: squads/squad-creator-pro/test-cases/upgrade-squad/test-case.yaml
+    timestamp: '2026-03-29T17:25:25.208Z'
+  - path: squads/squad-creator-pro/test-cases/validate-squad/comparison-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.212Z'
+  - path: squads/squad-creator-pro/test-cases/validate-squad/haiku-round-1-MINE.yaml
+    timestamp: '2026-03-29T17:25:25.216Z'
+  - path: squads/squad-creator-pro/test-cases/validate-squad/haiku-round-1.yaml
+    timestamp: '2026-03-29T17:25:25.224Z'
+  - path: squads/squad-creator-pro/test-cases/validate-squad/haiku-round-2.yaml
+    timestamp: '2026-03-29T17:25:25.224Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/validate-squad/haiku-round-3-v4-task.yaml
+    timestamp: '2026-03-29T17:25:25.228Z'
+  - path: squads/squad-creator-pro/test-cases/validate-squad/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.240Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/validate-squad/opus-round-3-v4-task.yaml
+    timestamp: '2026-03-29T17:25:25.252Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/validate-squad/qualification-report.yaml
+    timestamp: '2026-03-29T17:25:25.260Z'
+  - path: >-
+      squads/squad-creator-pro/test-cases/wf-clone-mind/haiku-output-v2-calibrated.yaml
+    timestamp: '2026-03-29T17:25:25.264Z'
+  - path: squads/squad-creator-pro/test-cases/wf-clone-mind/haiku-output.yaml
+    timestamp: '2026-03-29T17:25:25.272Z'
+  - path: squads/squad-creator-pro/test-cases/wf-clone-mind/opus-baseline.yaml
+    timestamp: '2026-03-29T17:25:25.276Z'
+  - path: squads/squad-creator-pro/utils/.gitkeep
+    timestamp: '2026-03-29T17:25:25.280Z'
+  - path: squads/squad-creator-pro/workflows/.gitkeep
+    timestamp: '2026-03-29T17:25:25.280Z'
+  - path: squads/squad-creator-pro/workflows/create-squad.yaml
+    timestamp: '2026-03-29T17:25:25.284Z'
+  - path: squads/squad-creator-pro/workflows/modules/module-discovery.yaml
+    timestamp: '2026-03-29T17:25:25.292Z'
+  - path: squads/squad-creator-pro/workflows/modules/module-integration.yaml
+    timestamp: '2026-03-29T17:25:25.300Z'
+  - path: squads/squad-creator-pro/workflows/modules/module-quality-gates.yaml
+    timestamp: '2026-03-29T17:25:25.304Z'
+  - path: squads/squad-creator-pro/workflows/validate-squad.yaml
+    timestamp: '2026-03-29T17:25:25.308Z'
+  - path: squads/squad-creator-pro/workflows/wf-auto-acquire-sources.yaml
+    timestamp: '2026-03-29T17:25:25.312Z'
+  - path: squads/squad-creator-pro/workflows/wf-brownfield-upgrade-squad.yaml
+    timestamp: '2026-03-29T17:25:25.316Z'
+  - path: squads/squad-creator-pro/workflows/wf-clone-mind.yaml
+    timestamp: '2026-03-29T17:25:25.320Z'
+  - path: squads/squad-creator-pro/workflows/wf-context-aware-create-squad.yaml
+    timestamp: '2026-03-29T17:25:25.324Z'
+  - path: squads/squad-creator-pro/workflows/wf-create-squad.yaml
+    timestamp: '2026-03-29T17:25:25.332Z'
+  - path: squads/squad-creator-pro/workflows/wf-cross-provider-qualification.yaml
+    timestamp: '2026-03-29T17:25:25.336Z'
+  - path: squads/squad-creator-pro/workflows/wf-discover-tools.yaml
+    timestamp: '2026-03-29T17:25:25.340Z'
+  - path: squads/squad-creator-pro/workflows/wf-extraction-pipeline.yaml
+    timestamp: '2026-03-29T17:25:25.348Z'
+  - path: squads/squad-creator-pro/workflows/wf-mind-research-loop.yaml
+    timestamp: '2026-03-29T17:25:25.352Z'
+  - path: squads/squad-creator-pro/workflows/wf-model-tier-qualification.yaml
+    timestamp: '2026-03-29T17:25:25.356Z'
+  - path: squads/squad-creator-pro/workflows/wf-optimize-squad.yaml
+    timestamp: '2026-03-29T17:25:25.360Z'
+  - path: squads/squad-creator-pro/workflows/wf-research-then-create-agent.yaml
+    timestamp: '2026-03-29T17:25:25.364Z'
+  - path: squads/squad-creator-pro/workflows/wf-squad-fusion.yaml
+    timestamp: '2026-03-29T17:25:25.368Z'
+  - path: .aiox-core/pro-config.yaml
+    timestamp: '2026-03-29T17:25:25.372Z'
+  - path: .aiox-core/feature-registry.yaml
+    timestamp: '2026-03-29T17:25:25.376Z'
+  - path: .claude/commands/design/brad-frost.md
+    timestamp: '2026-03-29T17:25:25.392Z'
+  - path: .claude/commands/design/dan-mall.md
+    timestamp: '2026-03-29T17:25:25.396Z'
+  - path: .claude/commands/design/dave-malouf.md
+    timestamp: '2026-03-29T17:25:25.396Z'
+  - path: .claude/commands/design/design-chief.md
+    timestamp: '2026-03-29T17:25:25.404Z'
+  - path: .claude/commands/design/ds-foundations-lead.md
+    timestamp: '2026-03-29T17:25:25.404Z'
+  - path: .claude/commands/design/ds-token-architect.md
+    timestamp: '2026-03-29T17:25:25.408Z'
+  - path: .claude/commands/design/nano-banana-generator.md
+    timestamp: '2026-03-29T17:25:25.408Z'
+  - path: .claude/commands/design/storybook-expert.md
+    timestamp: '2026-03-29T17:25:25.412Z'
+  - path: .codex/agents/brad-frost.md
+    timestamp: '2026-03-29T17:25:25.412Z'
+  - path: .codex/agents/dan-mall.md
+    timestamp: '2026-03-29T17:25:25.412Z'
+  - path: .codex/agents/dave-malouf.md
+    timestamp: '2026-03-29T17:25:25.416Z'
+  - path: .codex/agents/design-chief.md
+    timestamp: '2026-03-29T17:25:25.420Z'
+  - path: .codex/agents/ds-foundations-lead.md
+    timestamp: '2026-03-29T17:25:25.420Z'
+  - path: .codex/agents/ds-token-architect.md
+    timestamp: '2026-03-29T17:25:25.424Z'
+  - path: .codex/agents/nano-banana-generator.md
+    timestamp: '2026-03-29T17:25:25.424Z'
+  - path: .codex/agents/storybook-expert.md
+    timestamp: '2026-03-29T17:25:25.424Z'
+  - path: .gemini/rules/design/brad-frost.md
+    timestamp: '2026-03-29T17:25:25.428Z'
+  - path: .gemini/rules/design/dan-mall.md
+    timestamp: '2026-03-29T17:25:25.432Z'
+  - path: .gemini/rules/design/dave-malouf.md
+    timestamp: '2026-03-29T17:25:25.432Z'
+  - path: .gemini/rules/design/design-chief.md
+    timestamp: '2026-03-29T17:25:25.436Z'
+  - path: .gemini/rules/design/ds-foundations-lead.md
+    timestamp: '2026-03-29T17:25:25.440Z'
+  - path: .gemini/rules/design/ds-token-architect.md
+    timestamp: '2026-03-29T17:25:25.440Z'
+  - path: .gemini/rules/design/nano-banana-generator.md
+    timestamp: '2026-03-29T17:25:25.444Z'
+  - path: .gemini/rules/design/storybook-expert.md
+    timestamp: '2026-03-29T17:25:25.444Z'
+  - path: .cursor/rules/brad-frost.md
+    timestamp: '2026-03-29T17:25:25.448Z'
+  - path: .cursor/rules/dan-mall.md
+    timestamp: '2026-03-29T17:25:25.448Z'
+  - path: .cursor/rules/dave-malouf.md
+    timestamp: '2026-03-29T17:25:25.448Z'
+  - path: .cursor/rules/design-chief.md
+    timestamp: '2026-03-29T17:25:25.452Z'
+  - path: .cursor/rules/ds-foundations-lead.md
+    timestamp: '2026-03-29T17:25:25.456Z'
+  - path: .cursor/rules/ds-token-architect.md
+    timestamp: '2026-03-29T17:25:25.456Z'
+  - path: .cursor/rules/nano-banana-generator.md
+    timestamp: '2026-03-29T17:25:25.460Z'
+  - path: .cursor/rules/storybook-expert.md
+    timestamp: '2026-03-29T17:25:25.460Z'
+  - path: .claude/commands/squad-creator-pro/oalanicolas.md
+    timestamp: '2026-03-29T17:25:25.464Z'
+  - path: .claude/commands/squad-creator-pro/pedro-valerio.md
+    timestamp: '2026-03-29T17:25:25.464Z'
+  - path: .claude/commands/squad-creator-pro/squad-chief.md
+    timestamp: '2026-03-29T17:25:25.468Z'
+  - path: .claude/commands/squad-creator-pro/thiago_finch.md
+    timestamp: '2026-03-29T17:25:25.472Z'
+  - path: .codex/agents/oalanicolas.md
+    timestamp: '2026-03-29T17:25:25.472Z'
+  - path: .codex/agents/pedro-valerio.md
+    timestamp: '2026-03-29T17:25:25.480Z'
+  - path: .codex/agents/squad-chief.md
+    timestamp: '2026-03-29T17:25:25.480Z'
+  - path: .codex/agents/thiago_finch.md
+    timestamp: '2026-03-29T17:25:25.484Z'
+  - path: .gemini/rules/squad-creator-pro/oalanicolas.md
+    timestamp: '2026-03-29T17:25:25.496Z'
+  - path: .gemini/rules/squad-creator-pro/pedro-valerio.md
+    timestamp: '2026-03-29T17:25:25.504Z'
+  - path: .gemini/rules/squad-creator-pro/squad-chief.md
+    timestamp: '2026-03-29T17:25:25.508Z'
+  - path: .gemini/rules/squad-creator-pro/thiago_finch.md
+    timestamp: '2026-03-29T17:25:25.512Z'
+  - path: .cursor/rules/oalanicolas.md
+    timestamp: '2026-03-29T17:25:25.512Z'
+  - path: .cursor/rules/pedro-valerio.md
+    timestamp: '2026-03-29T17:25:25.516Z'
+  - path: .cursor/rules/squad-chief.md
+    timestamp: '2026-03-29T17:25:25.516Z'
+  - path: .cursor/rules/thiago_finch.md
+    timestamp: '2026-03-29T17:25:25.516Z'
+  - path: pro-version.json
+    timestamp: '2026-03-29T17:25:26.532Z'
