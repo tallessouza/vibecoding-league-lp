@@ -4,16 +4,16 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aiox-primary focus-visible:ring-offset-2 focus-visible:ring-offset-aiox-background disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap font-semibold transition-all focus-visible:outline-none focus-visible:[box-shadow:var(--focus-brand)] disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         primary:
-          "bg-aiox-primary text-aiox-primary-foreground hover:bg-aiox-primary-hover shadow-aiox-glow hover:shadow-aiox-glow",
+          "bg-bb-lime text-bb-dark hover:bg-[#b8e600] shadow-[var(--neon-glow)] hover:shadow-[var(--lime-glow)]",
         secondary:
-          "border border-aiox-border bg-aiox-surface text-aiox-foreground hover:bg-aiox-surface-elevated hover:border-aiox-primary",
+          "border border-border bg-bb-surface text-bb-cream hover:bg-bb-surface-alt hover:border-bb-lime",
         ghost:
-          "text-aiox-foreground hover:bg-aiox-surface hover:text-aiox-primary",
+          "text-bb-cream hover:bg-bb-surface hover:text-bb-lime",
       },
       size: {
         sm: "h-8 rounded-md px-3 text-sm gap-1.5",

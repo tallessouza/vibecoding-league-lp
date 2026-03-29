@@ -51,17 +51,17 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-aiox-border bg-aiox-surface">
+    <footer className="border-t border-border bg-bb-surface">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Logo */}
-          <span className="text-lg font-bold tracking-tight text-aiox-foreground">
-            <span className="text-aiox-primary">Vibe</span>coding
-            <span className="ml-1 text-aiox-accent">League</span>
+          <span className="text-lg font-bold tracking-tight text-bb-cream">
+            <span className="text-bb-lime">Vibe</span>coding
+            <span className="ml-1 text-accent">League</span>
           </span>
 
           {/* Tagline */}
-          <p className="max-w-md text-sm text-aiox-muted">
+          <p className="max-w-md text-sm text-muted-foreground">
             O próximo esporte digital nascido do playbook da Kings League
           </p>
 
@@ -72,7 +72,7 @@ export function Footer() {
                 key={link.label}
                 href={link.href}
                 aria-label={link.label}
-                className="text-aiox-muted transition-colors hover:text-aiox-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aiox-primary focus-visible:ring-offset-2 focus-visible:ring-offset-aiox-background rounded"
+                className="text-muted-foreground transition-colors hover:text-bb-cream focus-visible:outline-none focus-visible:[box-shadow:var(--focus-brand)] rounded"
               >
                 {link.icon}
               </a>
@@ -80,10 +80,10 @@ export function Footer() {
           </div>
 
           {/* Divider */}
-          <div className="w-full border-t border-aiox-border-subtle" />
+          <div className="w-full border-t border-border" />
 
           {/* Copyright */}
-          <p className="text-xs text-aiox-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             © 2026 Vibecoding Competitivo. Todos os direitos reservados.
           </p>
         </div>

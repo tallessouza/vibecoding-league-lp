@@ -16,9 +16,9 @@ export function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 border-b border-aiox-border"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-border"
       style={{
-        background: "rgba(15, 14, 23, 0.85)",
+        background: "var(--bb-surface-overlay)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
       }}
@@ -27,12 +27,12 @@ export function Header() {
         {/* Logo */}
         <a
           href="#hero"
-          className="flex items-center gap-2 text-aiox-foreground transition-opacity hover:opacity-80"
+          className="flex items-center gap-2 text-bb-cream transition-opacity hover:opacity-80"
           aria-label="Vibecoding League — voltar ao topo"
         >
           <span className="text-lg font-bold tracking-tight">
-            <span className="text-aiox-primary">Vibe</span>coding
-            <span className="ml-1 text-aiox-accent">League</span>
+            <span className="text-bb-lime">Vibe</span>coding
+            <span className="ml-1 text-accent">League</span>
           </span>
         </a>
 
@@ -45,7 +45,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-aiox-muted transition-colors hover:text-aiox-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aiox-primary focus-visible:ring-offset-2 focus-visible:ring-offset-aiox-background rounded"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-bb-cream focus-visible:outline-none focus-visible:[box-shadow:var(--focus-brand)] rounded"
             >
               {link.label}
             </a>
@@ -62,7 +62,7 @@ export function Header() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-aiox-muted transition-colors hover:bg-aiox-surface hover:text-aiox-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aiox-primary md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-bb-surface hover:text-bb-cream focus-visible:outline-none focus-visible:[box-shadow:var(--focus-brand)] md:hidden"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
@@ -108,7 +108,7 @@ export function Header() {
       {isMenuOpen && (
         <div
           id="mobile-menu"
-          className="border-t border-aiox-border bg-aiox-surface md:hidden"
+          className="border-t border-border bg-bb-surface md:hidden"
         >
           <nav
             className="flex flex-col gap-1 px-4 py-3"
@@ -119,7 +119,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenu}
-                className="rounded-md px-3 py-2 text-sm font-medium text-aiox-muted transition-colors hover:bg-aiox-surface-elevated hover:text-aiox-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aiox-primary"
+                className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-bb-surface-alt hover:text-bb-cream focus-visible:outline-none focus-visible:[box-shadow:var(--focus-brand)]"
               >
                 {link.label}
               </a>
