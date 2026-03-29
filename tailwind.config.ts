@@ -73,6 +73,7 @@ const config: Config = {
         "aiox-error": "var(--error)",
       },
       fontFamily: {
+        display: ["var(--font-bb-display)", "TASA Orbiter", "Bebas Neue", "serif"],
         sans: ["var(--font-geist-sans)", "Geist", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "Geist Mono", "monospace"],
       },

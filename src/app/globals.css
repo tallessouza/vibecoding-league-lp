@@ -1,3 +1,15 @@
+/* DS-ADAPT-1.1: TASA Orbiter Display Font
+   Arquivo: public/fonts/TASAOrbiterDisplay-ExtraBold.woff2
+   Download: https://fonts.google.com/specimen/TASA+Orbiter+Display
+   Licença: verificar em https://brand.aioxsquad.ai */
+@font-face {
+  font-family: 'TASA Orbiter';
+  src: url('/fonts/TASAOrbiterDisplay-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,6 +51,17 @@
   --font-bb-display: "TASA Orbiter", "Bebas Neue", serif;
   --font-bb-sans: "Geist", system-ui, sans-serif;
   --font-bb-mono: "Roboto Mono", monospace;
+
+  /* Font-weight tokens (DS-ADAPT-1.1) */
+  --fw-thin: 100;
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
 
   /* Escala tipográfica */
   --text-display: 4rem;
@@ -150,6 +173,54 @@
   --aiox-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --aiox-ease-out: cubic-bezier(0, 0, 0.2, 1);
   --aiox-ease-spring: var(--ease-spring);
+
+  /* === DS-ADAPT-2.1: Tokens de Espaçamento Canônicos === */
+
+  /* Espaçamento semântico */
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 2rem;     /* 32px */
+  --spacing-lg: 3rem;     /* 48px */
+  --spacing-xl: 4rem;     /* 64px */
+
+  /* Escala numérica */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 120px;
+  --space-13: 180px;
+
+  /* Z-index layers */
+  --layer-nav: 100;
+  --layer-dropdown: 200;
+  --layer-overlay: 300;
+  --layer-modal: 400;
+  --layer-toast: 500;
+
+  /* Breakpoints */
+  --bp-mobile: 767px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1200px;
+
+  /* Gray scale */
+  --bb-gray-charcoal: #3D3D3D;
+  --bb-gray-dim: rgba(61, 61, 61, 0.8);
+  --bb-gray-muted: rgba(61, 61, 61, 0.5);
+  --bb-gray-silver: #9A9A9A;
+
+  /* Surface tokens ausentes */
+  --bb-surface-hover-strong: #252720;
+  --bb-surface-panel: #161618;
+  --bb-surface-console: #0A0A0C;
 }
 
 /* === Base Styles === */
@@ -176,10 +247,11 @@ body {
    ============================================= */
 @layer components {
   .text-display {
+    font-family: var(--font-bb-display);
     font-size: clamp(2rem, 5vw, var(--aiox-text-5xl));
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   .text-section {
