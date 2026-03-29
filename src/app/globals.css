@@ -3,74 +3,119 @@
 @tailwind utilities;
 
 /* =============================================
-   AIOX Design Tokens — Brandbook Lime Theme
-   Fonte: brand.aioxsquad.ai/brandbook/token-export
+   AIOX Brandbook — Tokens Canônicos (--bb-*)
    ============================================= */
 :root {
-  /* === Cores === */
-  --background: #050505;
-  --foreground: #F4F4E8;
-  --primary: #D1FF00;
-  --primary-foreground: #050505;
-  --card: #0F0F11;
-  --card-foreground: #F4F4E8;
-  --secondary: #1C1E19;
-  --muted: #111113;
-  --muted-foreground: rgba(245, 244, 231, 0.4);
-  --accent: rgba(209, 255, 0, 0.1);
-  --accent-foreground: #D1FF00;
-  --destructive: #EF4444;
-  --border: rgba(156, 156, 156, 0.15);
-  --input: rgba(156, 156, 156, 0.2);
-  --ring: rgba(209, 255, 0, 0.4);
-  --surface: #0F0F11;
-  --surface-alt: #1C1E19;
-  --blue: #0099FF;
-  --flare: #ED4609;
-  --error: #EF4444;
-  --warning: #F59E0B;
+  /* Backgrounds */
+  --bb-dark: #050505;
+  --bb-surface: #0F0F11;
+  --bb-surface-alt: #1C1E19;
+  --bb-surface-deep: oklch(0.13 0 0);
+  --bb-surface-overlay: rgba(15,15,17,0.92);
+  --bb-glass-blur: blur(10px);
 
-  /* === Aliases para compatibilidade (--aiox-* → tokens reais) === */
-  --aiox-primary: var(--primary);
+  /* Cores */
+  --bb-lime: #D1FF00;
+  --bb-cream: #F5F4E7;
+  --bb-dim: rgba(245,244,231,0.4);
+  --bb-blue: #0099FF;
+  --bb-flare: #ED4609;
+  --bb-error: #EF4444;
+
+  /* Bordas */
+  --bb-border: rgba(156,156,156,0.15);
+  --bb-border-strong: #3D3D3D;
+  --bb-border-hover: rgba(156,156,156,0.24);
+  --bb-border-input: rgba(156,156,156,0.2);
+
+  /* Radius */
+  --bb-radius: 0.5rem;
+  --bb-radius-sm: 4px;
+  --bb-radius-lg: 12px;
+  --bb-radius-xl: 16px;
+  --bb-radius-full: 9999px;
+
+  /* Tipografia */
+  --font-bb-display: "TASA Orbiter", "Bebas Neue", serif;
+  --font-bb-sans: "Geist", system-ui, sans-serif;
+  --font-bb-mono: "Roboto Mono", monospace;
+
+  /* Escala tipográfica */
+  --text-display: 4rem;
+  --text-h1: 2.5rem;
+  --text-h2: 1.5rem;
+  --text-body: 1rem;
+  --text-small: 0.8rem;
+  --text-label: 0.65rem;
+  --text-micro: 0.6rem;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-decel: cubic-bezier(0, 0, 0.2, 1);
+
+  /* === Aliases semânticos (mapeados para --bb-*) === */
+  --background: var(--bb-dark);
+  --foreground: var(--bb-cream);
+  --primary: var(--bb-lime);
+  --primary-foreground: var(--bb-dark);
+  --card: var(--bb-surface);
+  --card-foreground: var(--bb-cream);
+  --secondary: var(--bb-surface-alt);
+  --muted: var(--bb-surface);
+  --muted-foreground: var(--bb-dim);
+  --accent: rgba(209, 255, 0, 0.1);
+  --accent-foreground: var(--bb-lime);
+  --destructive: var(--bb-error);
+  --border: var(--bb-border);
+  --input: var(--bb-border-input);
+  --ring: rgba(209, 255, 0, 0.4);
+  --surface: var(--bb-surface);
+  --surface-alt: var(--bb-surface-alt);
+  --blue: var(--bb-blue);
+  --flare: var(--bb-flare);
+  --error: var(--bb-error);
+  --warning: #F59E0B;
+  --radius: var(--bb-radius);
+
+  /* === Legacy --aiox-* aliases → --bb-* === */
+  --aiox-primary: var(--bb-lime);
   --aiox-primary-hover: #b8e600;
-  --aiox-primary-foreground: var(--primary-foreground);
-  --aiox-accent: var(--accent);
-  --aiox-accent-foreground: var(--accent-foreground);
-  --aiox-background: var(--background);
-  --aiox-surface: var(--surface);
-  --aiox-surface-elevated: var(--surface-alt);
-  --aiox-foreground: var(--foreground);
-  --aiox-muted: var(--muted-foreground);
-  --aiox-muted-foreground: var(--muted-foreground);
-  --aiox-border: var(--border);
-  --aiox-border-subtle: var(--border);
+  --aiox-primary-foreground: var(--bb-dark);
+  --aiox-accent: rgba(209, 255, 0, 0.1);
+  --aiox-accent-foreground: var(--bb-lime);
+  --aiox-background: var(--bb-dark);
+  --aiox-surface: var(--bb-surface);
+  --aiox-surface-elevated: var(--bb-surface-alt);
+  --aiox-foreground: var(--bb-cream);
+  --aiox-muted: var(--bb-dim);
+  --aiox-muted-foreground: var(--bb-dim);
+  --aiox-border: var(--bb-border);
+  --aiox-border-subtle: var(--bb-border);
   --aiox-success: #10b981;
-  --aiox-warning: var(--warning);
-  --aiox-error: var(--error);
+  --aiox-warning: #F59E0B;
+  --aiox-error: var(--bb-error);
   --aiox-gradient-primary: linear-gradient(135deg, #D1FF00 0%, #b8e600 100%);
   --aiox-gradient-accent: linear-gradient(135deg, #D1FF00 0%, #ED4609 100%);
-  --aiox-gradient-dark: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
+  --aiox-gradient-dark: linear-gradient(180deg, var(--bb-surface) 0%, var(--bb-dark) 100%);
 
-  /* === Tipografia === */
+  /* Typography legacy */
   --font-sans: "Geist", "Inter", system-ui, sans-serif;
   --font-mono: "Geist Mono", "Roboto Mono", monospace;
-
-  /* Legacy font aliases */
   --aiox-font-sans: var(--font-sans);
   --aiox-font-mono: var(--font-mono);
+  --aiox-text-xs: 0.75rem;
+  --aiox-text-sm: 0.875rem;
+  --aiox-text-base: 1rem;
+  --aiox-text-lg: 1.125rem;
+  --aiox-text-xl: 1.25rem;
+  --aiox-text-2xl: 1.5rem;
+  --aiox-text-3xl: 1.875rem;
+  --aiox-text-4xl: 2.25rem;
+  --aiox-text-5xl: 3rem;
+  --aiox-text-6xl: 3.75rem;
 
-  --aiox-text-xs: 0.75rem;    /* 12px */
-  --aiox-text-sm: 0.875rem;   /* 14px */
-  --aiox-text-base: 1rem;     /* 16px */
-  --aiox-text-lg: 1.125rem;   /* 18px */
-  --aiox-text-xl: 1.25rem;    /* 20px */
-  --aiox-text-2xl: 1.5rem;    /* 24px */
-  --aiox-text-3xl: 1.875rem;  /* 30px */
-  --aiox-text-4xl: 2.25rem;   /* 36px */
-  --aiox-text-5xl: 3rem;      /* 48px */
-  --aiox-text-6xl: 3.75rem;   /* 60px */
-
-  /* === Espaçamento === */
+  /* Spacing legacy */
   --aiox-space-1: 0.25rem;
   --aiox-space-2: 0.5rem;
   --aiox-space-3: 0.75rem;
@@ -82,16 +127,15 @@
   --aiox-space-20: 5rem;
   --aiox-space-24: 6rem;
 
-  /* === Raios de Borda === */
-  --radius: 0.5rem;
+  /* Radius legacy */
   --aiox-radius-sm: 0.25rem;
-  --aiox-radius: 0.5rem;
+  --aiox-radius: var(--bb-radius);
   --aiox-radius-md: 0.75rem;
-  --aiox-radius-lg: 1rem;
-  --aiox-radius-xl: 1.5rem;
-  --aiox-radius-full: 9999px;
+  --aiox-radius-lg: var(--bb-radius-lg);
+  --aiox-radius-xl: var(--bb-radius-xl);
+  --aiox-radius-full: var(--bb-radius-full);
 
-  /* === Sombras === */
+  /* Shadow legacy */
   --aiox-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
   --aiox-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
   --aiox-shadow-md: 0 8px 16px rgba(0, 0, 0, 0.6);
@@ -99,10 +143,7 @@
   --aiox-shadow-glow: 0 0 20px rgba(209, 255, 0, 0.35);
   --aiox-shadow-glow-accent: 0 0 20px rgba(209, 255, 0, 0.2);
 
-  /* === Motion === */
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
-  --ease-decel: cubic-bezier(0, 0, 0.2, 1);
+  /* Motion legacy */
   --aiox-duration-fast: 150ms;
   --aiox-duration-normal: 250ms;
   --aiox-duration-slow: 400ms;
@@ -117,9 +158,9 @@ html {
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+  background-color: var(--bb-dark);
+  color: var(--bb-cream);
+  font-family: var(--font-bb-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -131,11 +172,9 @@ body {
 }
 
 /* =============================================
-   Escala Tipográfica AIOX — Classes Utilitárias
-   Mapeamento: h1=display, h2=section, h3=card, body, caption
+   Escala Tipográfica — Classes Utilitárias
    ============================================= */
 @layer components {
-  /* Display (h1) — headline principal do Hero */
   .text-display {
     font-size: clamp(2rem, 5vw, var(--aiox-text-5xl));
     font-weight: 700;
@@ -143,7 +182,6 @@ body {
     letter-spacing: -0.02em;
   }
 
-  /* Section title (h2) — subtítulo de seções */
   .text-section {
     font-size: clamp(1.5rem, 3vw, var(--aiox-text-3xl));
     font-weight: 700;
@@ -151,50 +189,41 @@ body {
     letter-spacing: -0.01em;
   }
 
-  /* Card title (h3) — títulos de cards */
   .text-card {
     font-size: var(--aiox-text-xl);
     font-weight: 600;
     line-height: 1.3;
   }
 
-  /* Body — texto corrido */
   .text-body {
     font-size: var(--aiox-text-base);
     font-weight: 400;
     line-height: 1.6;
   }
 
-  /* Caption — textos auxiliares, labels */
   .text-caption {
     font-size: var(--aiox-text-sm);
     font-weight: 400;
     line-height: 1.5;
-    color: var(--muted-foreground);
+    color: var(--bb-dim);
   }
 }
 
-/* scroll-margin-top para compensar header fixo (h-16 = 4rem) */
-#hero,
-#formato,
-#por-que-brasil,
-#waitlist {
+/* scroll-margin-top para compensar header fixo */
+#hero, #formato, #por-que-brasil, #waitlist, #stats, #por-que-agora, #monetizacao {
   scroll-margin-top: 4rem;
 }
 
 /* =============================================
-   Hero Section — Background Animado + Tipografia
+   Hero Section — Background Animado
    ============================================= */
-
-/* Gradient text para o headline principal — Lime Theme */
 .hero-headline {
-  background: linear-gradient(135deg, #F4F4E8 0%, #D1FF00 60%, #b8e600 100%);
+  background: linear-gradient(135deg, var(--bb-cream) 0%, var(--bb-lime) 60%, #b8e600 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Grid animado de fundo — lime sutil */
 .hero-grid-bg {
   position: absolute;
   inset: 0;
@@ -206,17 +235,10 @@ body {
 }
 
 @keyframes hero-grid-pulse {
-  0%, 100% {
-    opacity: 0.5;
-    background-size: 60px 60px;
-  }
-  50% {
-    opacity: 1;
-    background-size: 62px 62px;
-  }
+  0%, 100% { opacity: 0.5; background-size: 60px 60px; }
+  50% { opacity: 1; background-size: 62px 62px; }
 }
 
-/* Gradiente de fade nas bordas do grid */
 .hero-grid-bg::after {
   content: "";
   position: absolute;
@@ -224,21 +246,64 @@ body {
   background: radial-gradient(
     ellipse 80% 60% at 50% 50%,
     transparent 30%,
-    var(--background) 100%
+    var(--bb-dark) 100%
   );
 }
 
-/* CTA secundário — alinhamento vertical */
 .hero-secondary-cta {
   display: inline-flex;
   align-items: center;
-  height: 3rem; /* igual ao Button size="lg" h-12 */
+  height: 3rem;
 }
 
-/* Respeitar prefers-reduced-motion */
-@media (prefers-reduced-motion: reduce) {
-  .hero-grid-bg {
-    animation: none;
-    opacity: 0.5;
+/* =============================================
+   Ticker / Marquee
+   ============================================= */
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* =============================================
+   Hairline Grid (Stats)
+   ============================================= */
+.hairline-grid {
+  background-color: var(--bb-border);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+
+@media (min-width: 768px) {
+  .hairline-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.hairline-cell {
+  background-color: var(--bb-dark);
+  padding: 2rem 1.5rem;
+}
+
+/* Staircase para Format */
+.staircase-card {
+  transition: transform 0.3s var(--ease-smooth);
+}
+
+.staircase-card:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-bg { animation: none; opacity: 0.5; }
+  .ticker-track { animation: none; }
+  .staircase-card:hover { transform: none; }
 }

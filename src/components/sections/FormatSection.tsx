@@ -1,39 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { RoundCard } from "@/components/ui/RoundCard";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { staggerContainer, staggerItem } from "@/lib/motion";
 
 const rounds = [
   {
     roundNumber: 1,
     name: "Speed Build",
-    duration: "15 min",
+    duration: "15–20 min",
     description:
-      "Construa o máximo possível no menor tempo. Pontuação por velocidade de deploy e qualidade do código.",
-    icon: "⚡",
-    iconLabel: "Raio — velocidade",
-    accentClass: "border-t-[#f59e0b]",
+      "Mesmo prompt, primeiro a fazer deploy pontua. Velocidade e execução sob pressão.",
+    accentColor: "#F59E0B",
   },
   {
     roundNumber: 2,
     name: "Creative Build",
-    duration: "35 min",
+    duration: "30–40 min",
     description:
-      "Criatividade em foco. Painel de juízes e audiência avaliam UI/UX, funcionalidade e inovação.",
-    icon: "🎨",
-    iconLabel: "Paleta — criatividade",
-    accentClass: "border-t-[#7c3aed]",
+      "Mesmo tema, interpretação livre. Julgado por painel + audiência ao vivo. Criatividade conta.",
+    accentColor: "#D1FF00",
   },
   {
     roundNumber: 3,
     name: "Mystery Twist",
-    duration: "15 min",
+    duration: "15–20 min",
     description:
-      "Na metade do tempo, um requisito surpresa é revelado. Adapte sua solução em tempo real.",
-    icon: "❓",
-    iconLabel: "Interrogação — surpresa",
-    accentClass: "border-t-[#ef4444]",
+      "Requisito surpresa revelado no meio. Adaptabilidade em tempo real determina o vencedor.",
+    accentColor: "#ED4609",
   },
 ];
 
@@ -41,17 +35,10 @@ export function FormatSection() {
   return (
     <section
       id="formato"
-      className="bg-aiox-background px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
+      className="bg-bb-surface px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 text-center">
-          <h2 className="text-section text-aiox-foreground">
-            Como Funciona a Competição
-          </h2>
-          <p className="text-body mt-4 text-aiox-muted">
-            3 rounds. 65 minutos. Um vencedor.
-          </p>
-        </div>
+        <SectionHeader index="02" label="O Formato" />
 
         <motion.div
           className="grid grid-cols-1 gap-6 lg:grid-cols-3"
@@ -60,9 +47,35 @@ export function FormatSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {rounds.map((round) => (
-            <motion.div key={round.roundNumber} variants={staggerItem}>
-              <RoundCard {...round} />
+          {rounds.map((round, i) => (
+            <motion.div
+              key={round.roundNumber}
+              variants={staggerItem}
+              style={{ marginTop: i > 0 ? `${i * 50 + 24}px` : undefined }}
+              className="staircase-card"
+            >
+              <div
+                className="flex flex-col gap-4 bg-bb-dark border border-bb-border p-6 rounded-lg"
+                style={{ borderTopColor: round.accentColor, borderTopWidth: 2 }}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-bb-dim border border-bb-border rounded-full px-3 py-1">
+                    Round {round.roundNumber}
+                  </span>
+                  <span
+                    className="font-mono text-[11px] uppercase tracking-[0.15em]"
+                    style={{ color: round.accentColor }}
+                  >
+                    {round.duration}
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-bb-cream">{round.name}</h3>
+
+                <p className="text-bb-dim text-sm leading-relaxed">
+                  {round.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

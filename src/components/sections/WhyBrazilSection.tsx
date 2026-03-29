@@ -1,27 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArgumentCard } from "@/components/ui/ArgumentCard";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { staggerContainer, staggerItem } from "@/lib/motion";
 
-const brazilArguments = [
+const reasons = [
   {
     title: "CazéTV",
     highlight: "50M espectadores",
     description:
-      "O maior canal de streaming esportivo do Brasil. Provou que formatos alternativos têm audiência massiva no país.",
+      "50M espectadores olímpicos no YouTube. Provou que formatos alternativos têm audiência massiva no Brasil.",
   },
   {
-    title: "LOUD & FURIA",
-    highlight: "Base global de fãs",
-    description:
-      "Times brasileiros de esports com relevância internacional. Comunidade engajada e habituada a acompanhar competições de tech.",
-  },
-  {
-    title: "Kings League BR",
+    title: "Kings League Brasil",
     highlight: "Kaká & Neymar",
     description:
-      "O formato que revolucionou o futebol casual chega ao Brasil com embaixadores de classe mundial — e o playbook já está provado.",
+      "Modelo validado com embaixadores de classe mundial. O playbook da Kings League já funciona aqui.",
+  },
+  {
+    title: "LOUD, FURIA, paiN Gaming",
+    highlight: "Monetização sofisticada",
+    description:
+      "Times com relevância global e comunidade engajada. A cultura de esports já está enraizada.",
+  },
+  {
+    title: "2º mercado de apostas",
+    highlight: "15% dos apostadores",
+    description:
+      "Brasil é o 2º mercado de apostas em esports do mundo. 15% dos apostadores preferem esports a esportes tradicionais.",
   },
 ];
 
@@ -29,37 +35,31 @@ export function WhyBrazilSection() {
   return (
     <section
       id="por-que-brasil"
-      className="bg-aiox-background px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
+      className="bg-bb-dark px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 flex flex-col items-center text-center">
-          <span
-            className="mb-4 text-5xl"
-            role="img"
-            aria-label="Bandeira do Brasil"
-          >
-            🇧🇷
-          </span>
-          <h2 className="text-section text-aiox-foreground">Por que o Brasil?</h2>
-          <p className="text-body mt-4 max-w-2xl text-aiox-muted">
-            O maior mercado de esports da América Latina. Pronto para o próximo esporte digital.
-          </p>
-        </div>
+        <SectionHeader index="05" label="Por Que o Brasil" />
 
         <motion.div
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {brazilArguments.map((arg) => (
-            <motion.div key={arg.title} variants={staggerItem}>
-              <ArgumentCard
-                title={arg.title}
-                highlight={arg.highlight}
-                description={arg.description}
-              />
+          {reasons.map((reason) => (
+            <motion.div key={reason.title} variants={staggerItem}>
+              <div className="flex flex-col gap-3 border border-bb-border bg-bb-surface p-6 rounded-lg transition-colors hover:border-bb-border-hover">
+                <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-bb-dim">
+                  {reason.title}
+                </p>
+                <p className="text-2xl font-bold text-bb-lime leading-tight">
+                  {reason.highlight}
+                </p>
+                <p className="text-sm text-bb-dim leading-relaxed">
+                  {reason.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

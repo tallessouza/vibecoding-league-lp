@@ -1,35 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MonetizationCard } from "@/components/ui/MonetizationCard";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { staggerContainer, staggerItem } from "@/lib/motion";
 
 const pillars = [
   {
-    icon: "🏆",
-    iconLabel: "Troféu — patrocínios",
-    title: "Patrocínios",
-    highlight: "65-70%",
+    title: "Patrocínio integrado",
+    highlight: "65–70%",
     description:
-      "Da receita vem de marcas de tech. Modelo validado pela Kings League com grandes parceiros globais.",
+      "Da receita. Modelo validado pela Kings League com grandes marcas globais. Integração nativa no formato.",
     percentage: 67,
   },
   {
-    icon: "🎲",
-    iconLabel: "Dado — apostas",
     title: "Apostas & Previsões",
-    highlight: "$2.8B/ano",
+    highlight: "$2.8B",
     description:
-      "Mercado global de apostas em esports. Integração de predictions com revenue share para a plataforma.",
+      "Mercado global de apostas em esports — segmento mais rápido. Revenue share para a plataforma.",
     percentage: 20,
   },
   {
-    icon: "📡",
-    iconLabel: "Antena — streaming",
-    title: "Streaming Descentralizado",
-    highlight: "Revenue Share",
+    title: "Co-streaming",
+    highlight: "44%",
     description:
-      "Criadores de conteúdo ganham por retransmitir partidas. Alinhamento de incentivos com a comunidade.",
+      "Da audiência de esports vem de co-streamers. Criadores ganham por retransmitir. Incentivos alinhados.",
     percentage: 13,
   },
 ];
@@ -38,20 +32,13 @@ export function MonetizationSection() {
   return (
     <section
       id="monetizacao"
-      className="bg-aiox-surface px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
+      className="bg-bb-surface px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 text-center">
-          <h2 className="text-section text-aiox-foreground">
-            Um Modelo de Negócio Comprovado
-          </h2>
-          <p className="text-body mt-4 text-aiox-muted">
-            Três fontes de receita. Uma oportunidade de escala.
-          </p>
-        </div>
+        <SectionHeader index="04" label="O Modelo" />
 
         <motion.div
-          className="grid grid-cols-1 gap-6 md:grid-cols-3"
+          className="grid grid-cols-1 gap-4 md:grid-cols-3"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -59,7 +46,27 @@ export function MonetizationSection() {
         >
           {pillars.map((pillar) => (
             <motion.div key={pillar.title} variants={staggerItem}>
-              <MonetizationCard {...pillar} />
+              <div className="flex flex-col gap-4 border border-bb-border bg-bb-dark p-6 rounded-lg h-full transition-colors hover:border-bb-border-hover">
+                <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-bb-dim">
+                  {pillar.title}
+                </p>
+                <p className="text-4xl font-bold text-bb-lime">{pillar.highlight}</p>
+                <p className="text-sm text-bb-dim leading-relaxed flex-1">
+                  {pillar.description}
+                </p>
+                <div>
+                  <div className="mb-1 flex items-center justify-between font-mono text-[10px] text-bb-dim uppercase tracking-widest">
+                    <span>Participação na receita</span>
+                    <span>{pillar.percentage}%</span>
+                  </div>
+                  <div className="h-1 w-full overflow-hidden rounded-full bg-bb-border">
+                    <div
+                      className="h-full rounded-full bg-bb-lime"
+                      style={{ width: `${pillar.percentage}%` }}
+                    />
+                  </div>
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

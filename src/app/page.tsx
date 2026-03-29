@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatsSection } from "@/components/sections/StatsSection";
 import { FormatSection } from "@/components/sections/FormatSection";
+import { WhyNowSection } from "@/components/sections/WhyNowSection";
 import { MonetizationSection } from "@/components/sections/MonetizationSection";
 import { WhyBrazilSection } from "@/components/sections/WhyBrazilSection";
 import { WaitlistSection } from "@/components/sections/WaitlistSection";
@@ -19,6 +20,10 @@ export default function Home() {
 
       <AnimatedSection>
         <FormatSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <WhyNowSection />
       </AnimatedSection>
 
       <AnimatedSection>

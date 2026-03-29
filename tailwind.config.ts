@@ -9,7 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /* === AIOX Brandbook Tokens — Lime Theme === */
+        /* === Brandbook Tokens (--bb-*) === */
+        "bb-dark": "var(--bb-dark)",
+        "bb-surface": "var(--bb-surface)",
+        "bb-surface-alt": "var(--bb-surface-alt)",
+        "bb-surface-overlay": "var(--bb-surface-overlay)",
+        "bb-lime": "var(--bb-lime)",
+        "bb-cream": "var(--bb-cream)",
+        "bb-dim": "var(--bb-dim)",
+        "bb-blue": "var(--bb-blue)",
+        "bb-flare": "var(--bb-flare)",
+        "bb-error": "var(--bb-error)",
+        "bb-border": "var(--bb-border)",
+        "bb-border-strong": "var(--bb-border-strong)",
+        "bb-border-hover": "var(--bb-border-hover)",
+
+        /* === Semantic Tokens === */
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useCountUp } from "@/hooks/useCountUp";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { staggerContainer, staggerItem } from "@/lib/motion";
 
 interface StatMetric {
@@ -9,39 +10,29 @@ interface StatMetric {
   suffix: string;
   prefix?: string;
   label: string;
-  icon: string;
-  iconLabel: string;
 }
 
 const metrics: StatMetric[] = [
   {
-    value: 8,
-    suffix: "",
-    label: "Competições realizadas em 2025-2026",
-    icon: "🏆",
-    iconLabel: "Troféu",
-  },
-  {
-    value: 700,
-    suffix: "k+",
-    prefix: "$",
-    label: "Em prêmios AWS distribuídos",
-    icon: "💰",
-    iconLabel: "Dinheiro",
-  },
-  {
     value: 14,
     suffix: "B",
-    label: "Impressões Kings League em 12 meses",
-    icon: "👁",
-    iconLabel: "Visualizações",
+    label: "impressões de marca Kings League em 12 meses",
   },
   {
-    value: 150,
-    suffix: "k+",
-    label: "Posts mensais sobre vibe coding no X",
-    icon: "📱",
-    iconLabel: "Posts nas redes sociais",
+    value: 2.8,
+    suffix: "B",
+    prefix: "$",
+    label: "apostas em esports em 2025 (58.3% da receita)",
+  },
+  {
+    value: 3.5,
+    suffix: "M",
+    label: "espectadores simultâneos na Kings World Cup 2025",
+  },
+  {
+    value: 75,
+    suffix: "%",
+    label: "dos usuários do Replit nunca escrevem uma linha de código",
   },
 ];
 
@@ -52,16 +43,15 @@ function StatCard({ metric }: { metric: StatMetric }) {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center gap-3 rounded-xl border border-aiox-border bg-aiox-surface p-6 text-center transition-colors hover:border-aiox-primary/40"
+      className="hairline-cell flex flex-col gap-3"
       aria-label={`${displayValue} — ${metric.label}`}
     >
-      <span className="text-4xl" role="img" aria-label={metric.iconLabel}>
-        {metric.icon}
-      </span>
-      <p className="text-4xl font-bold text-aiox-primary sm:text-5xl">
+      <p className="font-mono text-4xl font-bold text-bb-lime sm:text-5xl">
         {displayValue}
       </p>
-      <p className="text-sm text-aiox-muted leading-snug">{metric.label}</p>
+      <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-bb-dim leading-relaxed">
+        {metric.label}
+      </p>
     </div>
   );
 }
@@ -70,17 +60,13 @@ export function StatsSection() {
   return (
     <section
       id="stats"
-      className="bg-aiox-surface px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
+      className="bg-bb-dark px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 text-center">
-          <h2 className="text-section text-aiox-foreground">
-            Os números que provam a oportunidade
-          </h2>
-        </div>
+        <SectionHeader index="01" label="Os Números" />
 
         <motion.div
-          className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6"
+          className="hairline-grid"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
