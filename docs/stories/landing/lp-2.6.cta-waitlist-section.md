@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Ready for Review
 
 ## Executor Assignment
 
@@ -38,30 +38,30 @@ quality_gate_tools: ["manual-review", "form-validation", "accessibility"]
 
 ## Tasks / Subtasks
 
-- [ ] Instalar dependência `react-hook-form` (AC: 3)
-  - [ ] `npm install react-hook-form`
-- [ ] Criar API Route `app/api/waitlist/route.ts` (AC: 6)
-  - [ ] `POST` handler que recebe `{ name, email, type }`
-  - [ ] Validação básica server-side
-  - [ ] Mock: salva em `data/waitlist.json` local ou apenas retorna `{ success: true }`
-  - [ ] Retorna 200 com `{ message: "Registered successfully" }`
-- [ ] Criar componente `WaitlistSection` em `components/sections/WaitlistSection.tsx` (AC: 1, 2, 7, 8)
-  - [ ] Título e subtítulo
-  - [ ] Formulário com `react-hook-form`
-  - [ ] Campo Nome: `type="text"`, required
-  - [ ] Campo Email: `type="email"`, required, pattern validation
-  - [ ] Campo Tipo: radio buttons "Competidor" e "Investidor/Patrocinador"
-  - [ ] Botão submit
-- [ ] Implementar validação e estados (AC: 3, 4, 5)
-  - [ ] Mensagens de erro inline (ex: "Email inválido", "Campo obrigatório")
-  - [ ] Estado loading durante submit (spinner no botão)
-  - [ ] Estado sucesso: esconder formulário, mostrar mensagem de confirmação
-  - [ ] Estado erro: mostrar mensagem genérica de erro
-- [ ] Estilizar com design system AIOX (AC: 1)
-  - [ ] Input fields com tokens AIOX (`--aiox-border`, `--aiox-input-background`)
-  - [ ] Focus ring com `--aiox-primary`
-  - [ ] Seção com fundo diferenciado para destacar como CTA final
-- [ ] Integrar em `app/page.tsx`
+- [x] Instalar dependência `react-hook-form` (AC: 3)
+  - [x] `npm install react-hook-form`
+- [x] Criar API Route `app/api/waitlist/route.ts` (AC: 6)
+  - [x] `POST` handler que recebe `{ name, email, type }`
+  - [x] Validação básica server-side
+  - [x] Mock: salva em `data/waitlist.json` local ou apenas retorna `{ success: true }`
+  - [x] Retorna 200 com `{ message: "Registered successfully" }`
+- [x] Criar componente `WaitlistSection` em `components/sections/WaitlistSection.tsx` (AC: 1, 2, 7, 8)
+  - [x] Título e subtítulo
+  - [x] Formulário com `react-hook-form`
+  - [x] Campo Nome: `type="text"`, required
+  - [x] Campo Email: `type="email"`, required, pattern validation
+  - [x] Campo Tipo: radio buttons "Competidor" e "Investidor/Patrocinador"
+  - [x] Botão submit
+- [x] Implementar validação e estados (AC: 3, 4, 5)
+  - [x] Mensagens de erro inline (ex: "Email inválido", "Campo obrigatório")
+  - [x] Estado loading durante submit (spinner no botão)
+  - [x] Estado sucesso: esconder formulário, mostrar mensagem de confirmação
+  - [x] Estado erro: mostrar mensagem genérica de erro
+- [x] Estilizar com design system AIOX (AC: 1)
+  - [x] Input fields com tokens AIOX (`--aiox-border`, `--aiox-input-background`)
+  - [x] Focus ring com `--aiox-primary`
+  - [x] Seção com fundo diferenciado para destacar como CTA final
+- [x] Integrar em `app/page.tsx`
 
 ## Dev Notes
 
@@ -103,3 +103,23 @@ export async function POST(req: Request) {
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementação completa: WaitlistSection, API route, react-hook-form, validações, estados | Dex (@dev) |
+
+## Dev Agent Record
+
+### Agent Model Used
+claude-sonnet-4-6
+
+### Completion Notes
+- Todos os ACs implementados e validados
+- `react-hook-form` instalado via pnpm
+- API Route mock em `src/app/api/waitlist/route.ts` retorna `{ success: true }`
+- Acessibilidade: labels com `htmlFor`, `role="alert"`, `aria-live="polite"`, fieldset+legend para radios
+- Lint e typecheck passaram sem erros
+
+### File List
+- `src/app/api/waitlist/route.ts` — criado
+- `src/components/sections/WaitlistSection.tsx` — criado
+- `src/app/page.tsx` — modificado (integração WaitlistSection)
+- `package.json` — modificado (react-hook-form adicionado)
+- `pnpm-lock.yaml` — modificado
