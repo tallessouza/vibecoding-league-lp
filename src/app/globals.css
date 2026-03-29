@@ -3,46 +3,61 @@
 @tailwind utilities;
 
 /* =============================================
-   AIOX Design Tokens — CSS Custom Properties
+   AIOX Design Tokens — Brandbook Lime Theme
+   Fonte: brand.aioxsquad.ai/brandbook/token-export
    ============================================= */
 :root {
-  /* === Cores Primárias === */
-  --aiox-primary: #7c3aed;
-  --aiox-primary-hover: #6d28d9;
-  --aiox-primary-foreground: #ffffff;
+  /* === Cores === */
+  --background: #050505;
+  --foreground: #F4F4E8;
+  --primary: #D1FF00;
+  --primary-foreground: #050505;
+  --card: #0F0F11;
+  --card-foreground: #F4F4E8;
+  --secondary: #1C1E19;
+  --muted: #111113;
+  --muted-foreground: rgba(245, 244, 231, 0.4);
+  --accent: rgba(209, 255, 0, 0.1);
+  --accent-foreground: #D1FF00;
+  --destructive: #EF4444;
+  --border: rgba(156, 156, 156, 0.15);
+  --input: rgba(156, 156, 156, 0.2);
+  --ring: rgba(209, 255, 0, 0.4);
+  --surface: #0F0F11;
+  --surface-alt: #1C1E19;
+  --blue: #0099FF;
+  --flare: #ED4609;
+  --error: #EF4444;
+  --warning: #F59E0B;
 
-  /* === Cores de Acento === */
-  --aiox-accent: #f59e0b;
-  --aiox-accent-hover: #d97706;
-  --aiox-accent-foreground: #0f0e17;
-
-  /* === Superfícies === */
-  --aiox-background: #0f0e17;
-  --aiox-surface: #1a1830;
-  --aiox-surface-elevated: #24213d;
-
-  /* === Texto === */
-  --aiox-foreground: #fffffe;
-  --aiox-muted: #a0a0b2;
-  --aiox-muted-foreground: #6b7280;
-
-  /* === Bordas === */
-  --aiox-border: #2d2b4e;
-  --aiox-border-subtle: #1e1c35;
-
-  /* === Status === */
+  /* === Aliases para compatibilidade (--aiox-* → tokens reais) === */
+  --aiox-primary: var(--primary);
+  --aiox-primary-hover: #b8e600;
+  --aiox-primary-foreground: var(--primary-foreground);
+  --aiox-accent: var(--accent);
+  --aiox-accent-foreground: var(--accent-foreground);
+  --aiox-background: var(--background);
+  --aiox-surface: var(--surface);
+  --aiox-surface-elevated: var(--surface-alt);
+  --aiox-foreground: var(--foreground);
+  --aiox-muted: var(--muted-foreground);
+  --aiox-muted-foreground: var(--muted-foreground);
+  --aiox-border: var(--border);
+  --aiox-border-subtle: var(--border);
   --aiox-success: #10b981;
-  --aiox-warning: #f59e0b;
-  --aiox-error: #ef4444;
-
-  /* === Gradientes === */
-  --aiox-gradient-primary: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
-  --aiox-gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-  --aiox-gradient-dark: linear-gradient(180deg, #1a1830 0%, #0f0e17 100%);
+  --aiox-warning: var(--warning);
+  --aiox-error: var(--error);
+  --aiox-gradient-primary: linear-gradient(135deg, #D1FF00 0%, #b8e600 100%);
+  --aiox-gradient-accent: linear-gradient(135deg, #D1FF00 0%, #ED4609 100%);
+  --aiox-gradient-dark: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
 
   /* === Tipografia === */
-  --aiox-font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-  --aiox-font-mono: 'Fira Code', 'Cascadia Code', monospace;
+  --font-sans: "Geist", "Inter", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Roboto Mono", monospace;
+
+  /* Legacy font aliases */
+  --aiox-font-sans: var(--font-sans);
+  --aiox-font-mono: var(--font-mono);
 
   --aiox-text-xs: 0.75rem;    /* 12px */
   --aiox-text-sm: 0.875rem;   /* 14px */
@@ -68,6 +83,7 @@
   --aiox-space-24: 6rem;
 
   /* === Raios de Borda === */
+  --radius: 0.5rem;
   --aiox-radius-sm: 0.25rem;
   --aiox-radius: 0.5rem;
   --aiox-radius-md: 0.75rem;
@@ -76,20 +92,23 @@
   --aiox-radius-full: 9999px;
 
   /* === Sombras === */
-  --aiox-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
-  --aiox-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  --aiox-shadow-md: 0 8px 16px rgba(0, 0, 0, 0.4);
-  --aiox-shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.5);
-  --aiox-shadow-glow: 0 0 20px rgba(124, 58, 237, 0.4);
-  --aiox-shadow-glow-accent: 0 0 20px rgba(245, 158, 11, 0.4);
+  --aiox-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
+  --aiox-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  --aiox-shadow-md: 0 8px 16px rgba(0, 0, 0, 0.6);
+  --aiox-shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.7);
+  --aiox-shadow-glow: 0 0 20px rgba(209, 255, 0, 0.35);
+  --aiox-shadow-glow-accent: 0 0 20px rgba(209, 255, 0, 0.2);
 
   /* === Motion === */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-decel: cubic-bezier(0, 0, 0.2, 1);
   --aiox-duration-fast: 150ms;
   --aiox-duration-normal: 250ms;
   --aiox-duration-slow: 400ms;
   --aiox-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --aiox-ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --aiox-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --aiox-ease-spring: var(--ease-spring);
 }
 
 /* === Base Styles === */
@@ -98,9 +117,9 @@ html {
 }
 
 body {
-  background-color: var(--aiox-background);
-  color: var(--aiox-foreground);
-  font-family: var(--aiox-font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -151,7 +170,7 @@ body {
     font-size: var(--aiox-text-sm);
     font-weight: 400;
     line-height: 1.5;
-    color: var(--aiox-muted);
+    color: var(--muted-foreground);
   }
 }
 
@@ -167,21 +186,21 @@ body {
    Hero Section — Background Animado + Tipografia
    ============================================= */
 
-/* Gradient text para o headline principal */
+/* Gradient text para o headline principal — Lime Theme */
 .hero-headline {
-  background: linear-gradient(135deg, #fffffe 0%, #c4b5fd 50%, #7c3aed 100%);
+  background: linear-gradient(135deg, #F4F4E8 0%, #D1FF00 60%, #b8e600 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Grid animado de fundo */
+/* Grid animado de fundo — lime sutil */
 .hero-grid-bg {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(124, 58, 237, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 58, 237, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(209, 255, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(209, 255, 0, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: hero-grid-pulse 6s ease-in-out infinite;
 }
@@ -205,7 +224,7 @@ body {
   background: radial-gradient(
     ellipse 80% 60% at 50% 50%,
     transparent 30%,
-    var(--aiox-background) 100%
+    var(--background) 100%
   );
 }
 

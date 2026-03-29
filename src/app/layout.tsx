@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 const siteUrl = "https://vibecoding.league";
 const siteTitle = "Vibecoding League — Competição de Desenvolvimento com IA";
@@ -92,7 +87,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <script
           type="application/ld+json"
