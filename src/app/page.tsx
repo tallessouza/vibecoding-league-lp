@@ -1,6 +1,8 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatsSection } from "@/components/sections/StatsSection";
+import { WhoWeAreSection } from "@/components/sections/WhoWeAreSection";
 import { FormatSection } from "@/components/sections/FormatSection";
+import { PainPointsSection } from "@/components/sections/PainPointsSection";
 import { WhyNowSection } from "@/components/sections/WhyNowSection";
 import { MonetizationSection } from "@/components/sections/MonetizationSection";
 import { WhyBrazilSection } from "@/components/sections/WhyBrazilSection";
@@ -18,8 +20,18 @@ export default function Home() {
         <StatsSection />
       </AnimatedSection>
 
+      {/* DS-ADAPT-1.3: WhoWeAre — light section (bb-cream bg) */}
+      <AnimatedSection>
+        <WhoWeAreSection />
+      </AnimatedSection>
+
       <AnimatedSection>
         <FormatSection />
+      </AnimatedSection>
+
+      {/* DS-ADAPT-1.3: PainPoints — dual ticker (bb-surface bg) */}
+      <AnimatedSection>
+        <PainPointsSection />
       </AnimatedSection>
 
       <AnimatedSection>

@@ -387,6 +387,19 @@ body {
   animation-play-state: paused;
 }
 
+@keyframes ticker-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.ticker-track-reverse {
+  animation: ticker-reverse 30s linear infinite;
+}
+
+.ticker-track-reverse:hover {
+  animation-play-state: paused;
+}
+
 /* =============================================
    Hairline Grid (Stats)
    ============================================= */
