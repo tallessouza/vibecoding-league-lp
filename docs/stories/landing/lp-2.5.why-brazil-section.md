@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+InProgress
 
 ## Executor Assignment
 
@@ -39,14 +39,14 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `WhyBrazilSection` em `components/sections/WhyBrazilSection.tsx` (AC: 1, 5, 6)
-  - [ ] Título, subtítulo
-  - [ ] Grid responsivo
-- [ ] Criar componente `ArgumentCard` em `components/ui/ArgumentCard.tsx` (AC: 2, 3)
-  - [ ] Props: `title`, `highlight`, `description`
-  - [ ] Número/dado em destaque grande
-  - [ ] Descrição em `text-body`
-- [ ] Definir dados dos argumentos (AC: 2)
+- [x] Criar componente `WhyBrazilSection` em `components/sections/WhyBrazilSection.tsx` (AC: 1, 5, 6)
+  - [x] Título, subtítulo
+  - [x] Grid responsivo
+- [x] Criar componente `ArgumentCard` em `components/ui/ArgumentCard.tsx` (AC: 2, 3)
+  - [x] Props: `title`, `highlight`, `description`
+  - [x] Número/dado em destaque grande
+  - [x] Descrição em `text-body`
+- [x] Definir dados dos argumentos (AC: 2)
   ```typescript
   const arguments = [
     {
@@ -66,10 +66,10 @@ quality_gate_tools: ["manual-review", "visual-testing"]
     },
   ];
   ```
-- [ ] Adicionar elemento visual Brasil (AC: 4)
-  - [ ] Bandeira brasileira estilizada (SVG inline ou emoji 🇧🇷) no header da seção
-  - [ ] Cores sutis verde/amarelo no accent sem comprometer o design system AIOX
-- [ ] Integrar em `app/page.tsx`
+- [x] Adicionar elemento visual Brasil (AC: 4)
+  - [x] Bandeira brasileira estilizada (SVG inline ou emoji 🇧🇷) no header da seção
+  - [x] Cores sutis verde/amarelo no accent sem comprometer o design system AIOX
+- [x] Integrar em `app/page.tsx`
 
 ## Dev Notes
 
@@ -84,8 +84,20 @@ Fonte: análise de mercado do projeto (JOU-9):
 - LOUD e FURIA estão entre os 10 maiores times de esports do mundo
 - Kings League anunciou expansão para Brasil com Gerard Piqué, Kaká e Neymar
 
+## Dev Agent Record
+
+### File List
+- `src/components/sections/WhyBrazilSection.tsx` — novo
+- `src/components/ui/ArgumentCard.tsx` — novo
+- `src/app/page.tsx` — modificado (integração WhyBrazilSection)
+- `docs/stories/landing/lp-2.5.why-brazil-section.md` — modificado
+
+### Completion Notes
+- Todos os ACs implementados. ArgumentCard reutilizável com props tipadas. Layout grid responsivo 1→2→3 colunas. Emoji 🇧🇷 como elemento visual Brasil no header. Accent color do AIOX (aiox-accent) usado no highlight sem customizar tokens.
+
 ## Change Log
 
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementação completa: WhyBrazilSection + ArgumentCard + integração page.tsx | Dex (@dev) |

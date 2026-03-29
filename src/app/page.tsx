@@ -1,30 +1,39 @@
-import { Button } from "@/components/ui/Button";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { WhyBrazilSection } from "@/components/sections/WhyBrazilSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 bg-aiox-background p-8">
-      <h1 className="text-4xl font-bold text-aiox-foreground">
-        Vibecoding League
-      </h1>
-      <p className="text-aiox-muted text-lg">
-        A arena definitiva para desenvolvedores que usam IA.
-      </p>
-      <div className="flex flex-wrap gap-4">
-        <Button variant="primary" size="lg">
-          Entrar na Arena
-        </Button>
-        <Button variant="secondary" size="lg">
-          Saiba Mais
-        </Button>
-        <Button variant="ghost" size="lg">
-          Ver Ranking
-        </Button>
-      </div>
-      <div className="flex flex-wrap gap-4">
-        <Button variant="primary" size="sm">Primary SM</Button>
-        <Button variant="secondary" size="md">Secondary MD</Button>
-        <Button variant="ghost" size="lg">Ghost LG</Button>
-      </div>
-    </main>
+    <>
+      <HeroSection />
+
+      <section
+        id="formato"
+        className="bg-aiox-surface px-8 py-20"
+      >
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-section text-aiox-foreground">Formato</h2>
+          <p className="text-body mt-4 text-aiox-muted">
+            Em breve — conteúdo desta seção será implementado na próxima story.
+          </p>
+        </div>
+      </section>
+
+      <WhyBrazilSection />
+
+      <section
+        id="waitlist"
+        className="bg-aiox-surface px-8 py-20"
+      >
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-section text-aiox-foreground">
+            Lista de Espera
+          </h2>
+          <p className="text-body mt-4 text-aiox-muted">
+            Em breve — formulário de inscrição será implementado na próxima
+            story.
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
