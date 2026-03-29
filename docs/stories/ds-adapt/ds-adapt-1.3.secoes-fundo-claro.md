@@ -142,6 +142,38 @@ Usar contexto do projeto: equipe de vibecoding competitivo, missão de democrati
 ### Agent Model Used
 claude-sonnet-4-6
 
+## QA Results
+
+**Verdict:** CONCERNS
+**Reviewer:** Quinn (@qa)
+**Date:** 2026-03-29
+
+### Checklist
+
+| AC | Status | Notes |
+|----|--------|-------|
+| AC1 — WhoWeAre (bb-cream, institutional copy) | ✅ PASS | bg: var(--bb-cream)=#F5F4E7, 3 value cards, mission copy presente |
+| AC2 — PainPoints (dual ticker, headline) | ✅ PASS | TickerRow×2, h2 presente, ticker-scroll e ticker-reverse funcionando |
+| AC3 — Alternação dark/light brandbook | ⚠️ CONCERN | WhoWeAre=light ✅; PainPoints usa bb-surface (#0F0F11=dark) em vez de light — quebra o padrão. Mitigante: Dev Notes do spec usam bb-surface também (spec inconsistente) |
+| AC4 — Texto escuro WCAG AA em seções claras | ✅ PASS | WhoWeAre: h2=bb-dark ~∞:1, body 0.65→~6.5:1, cards 0.60→~5.7:1. Label dim 0.45→~3.2:1 (decorativo 11px, aceitável) |
+| AC5 — Transições sem bordas abruptas | ✅ PASS | Transições naturais, sem border separators |
+| AC6 — Responsivo mobile/desktop | ✅ PASS | grid-cols-1 md:grid-cols-3 em WhoWeAre, container responsivo em PainPoints |
+| AC7 — Dual ticker direções opostas | ✅ PASS | ticker-scroll (0→-50%) + ticker-reverse (-50%→0), hover pause em ambos |
+
+### Issues
+
+| Severity | AC | Descrição |
+|----------|-----|-----------|
+| MEDIUM | AC3 | PainPoints usa `var(--bb-surface)` (#0F0F11 dark) — brandbook especifica posição 5 como "light". Sequência atual: WhoWeAre(light)→Format(dark)→PainPoints(dark) — falta alternância. O Dev Notes do próprio spec usa bb-surface (inconsistência de spec), logo não é blocking. |
+| LOW | AC4 | `text-bb-dim` no ticker do PainPoints (rgba cream 40% sobre bb-surface) = ~3.9:1 — abaixo do AA para texto normal em 11px. Texto decorativo/informacional — monitorar. |
+
+### Recomendações
+
+1. **(Não blocking)** Avaliar se PainPoints deveria usar um fundo intermediário mais claro (ex: `--bb-surface-alt` ou um novo token `--bb-pearl`) para respeitar a alternância prevista no brandbook — pode ser endereçado em DS-ADAPT-2.x.
+2. **(Não blocking)** Ticker dim text: considerar elevar para `rgba(cream, 0.55)` para melhor legibilidade sem perder o efeito fade.
+
+---
+
 ## Change Log
 
 | Date | Version | Description | Author |
@@ -149,3 +181,4 @@ claude-sonnet-4-6
 | 2026-03-29 | 1.0 | Story criada a partir dos findings de Uma em JOU-38 | River (@sm) |
 | 2026-03-29 | 1.1 | GO — 7/10: alternância dark/light bem especificada, WCAG AA explícito. Ausentes: complexidade, riscos (copy WhoWeAre ainda indefinido), DoD — não bloqueantes | Pax (@po) |
 | 2026-03-29 | 1.2 | Implementação: WhoWeAreSection (light/cream), PainPointsSection (dual ticker), ticker-reverse CSS, integrado em page.tsx | Dex (@dev) |
+| 2026-03-29 | 1.3 | QA Review: CONCERNS — 5/7 ACs full pass, AC3 parcial (PainPoints bg=dark vs esperado light), issues não-blocking | Quinn (@qa) |

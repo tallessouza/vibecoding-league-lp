@@ -166,6 +166,43 @@ Usar contexto do projeto — vibecoding competitivo, hackathons, prêmios AWS. P
 ### Agent Model Used
 claude-sonnet-4-6
 
+## QA Results
+
+**Verdict: PASS**
+**Date:** 2026-03-29
+**Reviewer:** Quinn (@qa)
+
+### Acceptance Criteria Verification
+
+| AC | Status | Observação |
+|----|--------|------------|
+| 1. TestimonialsSection — hairline-grid, neon card, avatar, citação | ✅ PASS | hairline-grid via `gap-px` + bg, borda `var(--neon)` + `var(--lime-glow-soft)` no card featured. Avatar usa inicial do nome (placeholder aceitável). |
+| 2. HowItWorksSection — staircase, progress bar 48 ticks, steps numerados | ✅ PASS | 5 steps com `marginLeft: ${index * 1.5}rem`, 48 ticks (12 ativos), overflow-hidden no section. |
+| 3. PricingSection — 3 planos, toggle mensal/anual, destaque Pro | ✅ PASS | Free/Pro/Team, useState billing, badge "Recomendado" + borda neon no Pro. |
+| 4. FAQSection — accordion, badge lime, mínimo 6 perguntas | ✅ PASS | 7 FAQs, badge numérico lime (cor muda ao abrir), AnimatePresence. |
+| 5. Alternância de cor dark/light | ✅ PASS | HowItWorks(dark) → Testimonials(cream) → Pricing(surface) → FAQ(cream). |
+| 6. Responsivo mobile/desktop | ✅ PASS | Testimonials: 1→2→4 cols. Pricing: 1→3 cols. FAQ/HowItWorks: padding responsivo. |
+| 7. Mínimo 3 depoimentos com nome, cargo, citação | ✅ PASS | 4 depoimentos com name, role, quote. |
+| 8. FAQ accordion com animação suave | ✅ PASS | AnimatePresence, `duration: 0.25, ease: "easeInOut"`. |
+
+### Issues
+
+| Severity | Categoria | Descrição |
+|----------|-----------|-----------|
+| LOW | Visual | TestimonialsSection usa iniciais ao invés de fotos/avatares reais (placeholder aceitável para landing page). |
+| LOW | Responsivo | Staircase indent acumulado: step 5 tem 6rem de margem — pode ficar apertado em telas muito pequenas (< 375px). |
+| LOW | Pricing | Desconto anual do plano Team: ~23% (R$99 vs R$129), não exatamente 20%. O badge "-20%" no toggle comunica o desconto geral, não por plano. |
+
+### Build Status
+
+✅ `npm run build` passou sem erros. Bundle: 52.4 kB (página principal).
+
+### Gate Decision
+
+**PASS** — Todos os 8 ACs satisfeitos. Issues são LOW severity e não bloqueiam. Implementação aprovada para push via @devops.
+
+---
+
 ## Change Log
 
 | Date | Version | Description | Author |
@@ -173,3 +210,4 @@ claude-sonnet-4-6
 | 2026-03-29 | 1.0 | Story criada a partir dos findings de Uma em JOU-38 | River (@sm) |
 | 2026-03-29 | 1.1 | GO — 7/10: ACs detalhados (hairline-grid, 48-ticks, accordion). Nota: alta complexidade (4 seções grandes) — considerar split se @dev encontrar dificuldades. Ausentes: estimativa, riscos (conteúdo pricing/testimonials TBD), DoD | Pax (@po) |
 | 2026-03-29 | 1.2 | Implementação completa: TestimonialsSection, HowItWorksSection, PricingSection, FAQSection criados e integrados | Dex (@dev) |
+| 2026-03-29 | 1.3 | QA Gate: PASS — todos os 8 ACs verificados, build limpo, 3 observações LOW. | Quinn (@qa) |
