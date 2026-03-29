@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-03-29T00:00:00.000Z",
+  "project": {
+    "name": "vibecoding-league-lp",
+    "path": "/home/talle/vibecoding-league-lp",
+    "type": "landing-page"
+  },
+  "os": {
+    "platform": "linux",
+    "arch": "x86_64",
+    "distribution": "Ubuntu (WSL2)"
+  },
+  "tools": {
+    "essential": {
+      "git": { "status": "ok", "version": "2.39.5" },
+      "gh": { "status": "ok", "version": "2.67.0", "authenticated": true, "account": "tallessouza" },
+      "node": { "status": "ok", "version": "22.18.0" },
+      "npm": { "status": "ok", "version": "10.9.3" }
+    },
+    "optional": {
+      "pnpm": { "status": "ok", "version": "9.15.4" }
+    }
+  },
+  "stack": {
+    "framework": "next.js@14.2.35",
+    "language": "typescript@5.9.3",
+    "styling": "tailwindcss@3.4.19",
+    "animations": "framer-motion@12.38.0",
+    "theming": "next-themes@0.4.6",
+    "ui": [
+      "@radix-ui/react-icons@1.3.2",
+      "@radix-ui/react-slot@1.2.4",
+      "@radix-ui/react-dialog@1.1.15",
+      "@radix-ui/react-dropdown-menu@2.1.16"
+    ]
+  },
+  "deployment": {
+    "platform": "vercel",
+    "status": "pending_link"
+  },
+  "aiox": {
+    "structure": {
+      "docs": true,
+      "docs_stories": true,
+      "docs_prd": true,
+      "aiox_config": true
+    }
+  }
+}

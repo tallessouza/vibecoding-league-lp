@@ -1,0 +1,32 @@
+project:
+  name: vibecoding-league-lp
+  type: landing-page
+  framework: nextjs
+  language: typescript
+  created_at: "2026-03-29"
+
+aiox:
+  version: "2.0"
+  mode: project-development
+
+stack:
+  frontend:
+    framework: next.js
+    version: "14"
+    router: app
+    styling: tailwindcss
+    animations: framer-motion
+    theming: next-themes
+    ui_components:
+      - "@radix-ui/react-icons"
+      - "@radix-ui/react-slot"
+      - "@radix-ui/react-dialog"
+      - "@radix-ui/react-dropdown-menu"
+  deployment:
+    platform: vercel
+    branch: main
+
+paths:
+  stories: docs/stories
+  prd: docs/prd
+  architecture: docs/architecture.md
