@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Ready for Review
 
 ## Executor Assignment
 
@@ -36,18 +36,18 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `MonetizationSection` em `components/sections/MonetizationSection.tsx` (AC: 1, 5, 6)
-  - [ ] Título e subtítulo
-  - [ ] Grid `grid-cols-1 md:grid-cols-3`
-- [ ] Criar componente `MonetizationCard` em `components/ui/MonetizationCard.tsx` (AC: 2, 3)
-  - [ ] Props: `icon`, `title`, `highlight`, `description`, `percentage`
-  - [ ] Ícone SVG ou emoji
-  - [ ] Número de destaque em tamanho grande
-  - [ ] Descrição em `text-body`
-- [ ] Implementar barra de proporção (AC: 4)
-  - [ ] Barra visual estilizada mostrando 65-70% para patrocínios
-  - [ ] CSS puro (sem biblioteca de gráficos externa) para manter bundle leve
-- [ ] Definir dados dos pilares
+- [x] Criar componente `MonetizationSection` em `components/sections/MonetizationSection.tsx` (AC: 1, 5, 6)
+  - [x] Título e subtítulo
+  - [x] Grid `grid-cols-1 md:grid-cols-3`
+- [x] Criar componente `MonetizationCard` em `components/ui/MonetizationCard.tsx` (AC: 2, 3)
+  - [x] Props: `icon`, `title`, `highlight`, `description`, `percentage`
+  - [x] Ícone SVG ou emoji
+  - [x] Número de destaque em tamanho grande
+  - [x] Descrição em `text-body`
+- [x] Implementar barra de proporção (AC: 4)
+  - [x] Barra visual estilizada mostrando 65-70% para patrocínios
+  - [x] CSS puro (sem biblioteca de gráficos externa) para manter bundle leve
+- [x] Definir dados dos pilares
   ```typescript
   const pillars = [
     {
@@ -73,7 +73,7 @@ quality_gate_tools: ["manual-review", "visual-testing"]
     },
   ];
   ```
-- [ ] Integrar em `app/page.tsx`
+- [x] Integrar em `app/page.tsx`
 
 ## Dev Notes
 
@@ -96,3 +96,4 @@ Esta seção deve ter tom mais sério/profissional para atrair investidores. Usa
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementado: MonetizationSection + MonetizationCard + barra de proporção, build ✅ | Dex (@dev) |

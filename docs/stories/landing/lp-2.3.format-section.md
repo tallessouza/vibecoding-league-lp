@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Ready for Review
 
 ## Executor Assignment
 
@@ -36,15 +36,15 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `FormatSection` em `components/sections/FormatSection.tsx` (AC: 1, 5, 6)
-  - [ ] Título e subtítulo da seção
-  - [ ] Grid `grid-cols-1 lg:grid-cols-3`
-- [ ] Criar componente `RoundCard` em `components/ui/RoundCard.tsx` (AC: 2, 3, 4)
-  - [ ] Props: `roundNumber`, `name`, `duration`, `description`, `accentColor`
-  - [ ] Badge "Round N" no topo
-  - [ ] Ícone representativo do round (timer/relâmpago/interrogação)
-  - [ ] Border e accent color distintos por round
-- [ ] Definir dados dos rounds (AC: 2)
+- [x] Criar componente `FormatSection` em `components/sections/FormatSection.tsx` (AC: 1, 5, 6)
+  - [x] Título e subtítulo da seção
+  - [x] Grid `grid-cols-1 lg:grid-cols-3`
+- [x] Criar componente `RoundCard` em `components/ui/RoundCard.tsx` (AC: 2, 3, 4)
+  - [x] Props: `roundNumber`, `name`, `duration`, `description`, `accentColor`
+  - [x] Badge "Round N" no topo
+  - [x] Ícone representativo do round (timer/relâmpago/interrogação)
+  - [x] Border e accent color distintos por round
+- [x] Definir dados dos rounds (AC: 2)
   ```typescript
   const rounds = [
     {
@@ -70,8 +70,8 @@ quality_gate_tools: ["manual-review", "visual-testing"]
     },
   ];
   ```
-- [ ] Integrar em `app/page.tsx`
-  - [ ] Importar e renderizar `<FormatSection />` após `<StatsSection />`
+- [x] Integrar em `app/page.tsx`
+  - [x] Importar e renderizar `<FormatSection />` após `<StatsSection />`
 
 ## Dev Notes
 
@@ -102,3 +102,4 @@ Referência visual: `/brandbook/cards` no design system AIOX. Os cards devem ter
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementado: FormatSection + RoundCard, build ✅ | Dex (@dev) |

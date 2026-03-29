@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft
+Ready for Review
 
 ## Executor Assignment
 
@@ -36,20 +36,20 @@ quality_gate_tools: ["manual-review", "visual-testing"]
 
 ## Tasks / Subtasks
 
-- [ ] Criar componente `StatsSection` em `components/sections/StatsSection.tsx` (AC: 1, 4, 5, 6)
-  - [ ] Grid responsivo: `grid-cols-2 lg:grid-cols-4`
-  - [ ] Card por métrica: número, label, ícone
-  - [ ] Título da seção
-- [ ] Implementar hook `useCountUp` (AC: 3)
-  - [ ] Hook customizado: `useCountUp(target: number, duration: number)`
-  - [ ] Ativar via Intersection Observer quando elemento entra na viewport
-  - [ ] Animação com `requestAnimationFrame` (sem dependência externa)
-- [ ] Definir dados das métricas (AC: 2)
-  - [ ] Array de objetos: `{ value, suffix, label, icon }`
-  - [ ] Valores: 8 (competições), 700000 (prêmios $), 14000000000 (impressões), 150000 (posts)
-  - [ ] Formatar com abreviações: K, M, B
-- [ ] Integrar em `app/page.tsx`
-  - [ ] Importar e renderizar `<StatsSection />` após `<HeroSection />`
+- [x] Criar componente `StatsSection` em `components/sections/StatsSection.tsx` (AC: 1, 4, 5, 6)
+  - [x] Grid responsivo: `grid-cols-2 lg:grid-cols-4`
+  - [x] Card por métrica: número, label, ícone
+  - [x] Título da seção
+- [x] Implementar hook `useCountUp` (AC: 3)
+  - [x] Hook customizado: `useCountUp(target: number, duration: number)`
+  - [x] Ativar via Intersection Observer quando elemento entra na viewport
+  - [x] Animação com `requestAnimationFrame` (sem dependência externa)
+- [x] Definir dados das métricas (AC: 2)
+  - [x] Array de objetos: `{ value, suffix, label, icon }`
+  - [x] Valores: 8 (competições), 700000 (prêmios $), 14000000000 (impressões), 150000 (posts)
+  - [x] Formatar com abreviações: K, M, B
+- [x] Integrar em `app/page.tsx`
+  - [x] Importar e renderizar `<StatsSection />` após `<HeroSection />`
 
 ## Dev Notes
 
@@ -93,3 +93,4 @@ function useCountUp(target: number, duration = 2000) {
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
 | 2026-03-29 | 1.0 | Story criada para landing page Vibecoding Competitivo | River (@sm) |
+| 2026-03-29 | 1.1 | Implementado: StatsSection + useCountUp hook, build ✅ | Dex (@dev) |
