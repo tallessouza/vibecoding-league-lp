@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/AioxButton";
 
 interface Plan {
   id: string;

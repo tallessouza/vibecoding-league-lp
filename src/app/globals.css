@@ -101,6 +101,28 @@
   --warning: #F59E0B;
   --radius: var(--bb-radius);
 
+  /* === shadcn/ui compatibility tokens === */
+  --destructive-foreground: #ffffff;
+  --popover: var(--bb-surface);
+  --popover-foreground: var(--bb-cream);
+
+  /* Sidebar */
+  --sidebar-background: var(--bb-dark);
+  --sidebar-foreground: rgba(245, 244, 231, 0.55);
+  --sidebar-primary: var(--bb-lime);
+  --sidebar-primary-foreground: var(--bb-dark);
+  --sidebar-accent: rgba(209, 255, 0, 0.1);
+  --sidebar-accent-foreground: var(--bb-lime);
+  --sidebar-border: var(--bb-border);
+  --sidebar-ring: rgba(209, 255, 0, 0.4);
+
+  /* Chart */
+  --chart-1: var(--bb-lime);
+  --chart-2: #10b981;
+  --chart-3: var(--bb-blue);
+  --chart-4: #F59E0B;
+  --chart-5: #8b5cf6;
+
   /* === Legacy --aiox-* aliases → --bb-* === */
   --aiox-primary: var(--bb-lime);
   --aiox-primary-hover: #b8e600;

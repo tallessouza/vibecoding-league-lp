@@ -1,6 +1,6 @@
 "use client";
 
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/ui/AioxBadge";
 import { AccentButton } from "@/components/ui/AccentButton";
 import { Ticker } from "@/components/ui/Ticker";
 
